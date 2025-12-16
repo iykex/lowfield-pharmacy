@@ -15,7 +15,7 @@ export const AboutSection = () => {
             The NHS Pharmacy First programme allows patients in England and
             Scotland to receive healthcare advice and treatment for various
             common conditions directly from their local pharmacy, reducing the
-            strain on GP services. At Belvedere Pharmacy, we are committed to
+            strain on GP services. At Kidbrooke Pharmacy, we are committed to
             offering this valuable service to help you access the care you need
             quickly and efficiently.
           </p>

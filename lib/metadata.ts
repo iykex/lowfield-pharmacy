@@ -1,17 +1,17 @@
 import { Metadata } from "next";
 
 // Site configuration - uses environment variable or defaults to production URL
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://belvederepharmacy.net";
-const SITE_NAME = "Belvedere Pharmacy";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://kidbrookepharmacy.net";
+const SITE_NAME = "Kidbrooke Pharmacy";
 
 export const rootMetadata: Metadata = {
   title: SITE_NAME,
   description:
-    "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Belvedere, Kent.",
+    "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
   keywords: [
     "Pharmacy",
     "NHS Pharmacy",
-    "Belvedere Pharmacy",
+    "Kidbrooke Pharmacy",
     "Prescription",
     "Health",
     "Medicine",
@@ -46,7 +46,7 @@ export const rootMetadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description:
-      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Belvedere, Kent.",
+      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
@@ -59,11 +59,11 @@ export const rootMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@belvederepharm",
-    creator: "@belvederepharm",
+    site: "@kidbrookepharm",
+    creator: "@kidbrookepharm",
     title: SITE_NAME,
     description:
-      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Belvedere, Kent.",
+      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: {

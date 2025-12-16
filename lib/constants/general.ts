@@ -48,31 +48,31 @@ import { TRACKING_EVENTS } from "./analytics";
 export const EXTERNAL_LINKS = {
   services: {
     stopSmokingServices:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5341",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5341",
 
     bloodPressureChecks:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5343",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5343",
     fluVaccinations:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5340",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5340",
 
     emergencyContraception:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5339",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5339",
     covidVaccination:
-      "https://shop.belvederepharmacy.net/appointments/book/service/COVID-19%20Vaccine?pharmacy=378&originalServiceId=5342&type=redirection",
+      "https://shop.kidbrookepharmacy.net/appointments/book/service/COVID-19%20Vaccine?pharmacy=378&originalServiceId=5342&type=redirection",
     earPain:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5349",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5349",
     infectedInsectBites:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5347",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5347",
     sinusInfection:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5348",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5348",
     urinaryTractInfection:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5344",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5344",
     bacterialSkinInfection:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5345",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5345",
     shingles:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5350",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5350",
     soreThroatConsultations:
-      "https://app.belvederepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5346",
+      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5346",
   },
   socials: {
     facebook: "",
@@ -81,17 +81,17 @@ export const EXTERNAL_LINKS = {
     linkedIn: "",
     whatsapp: "https://wa.me/+44(0)1234567890",
     phone: "tel:+44(0)1234567890",
-    email: "mailto:info@belvederepharmacy.com",
+    email: "mailto:info@kidbrookepharmacy.com",
   },
   actions: {
     bookAppointment:
-      "https://shop.belvederepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
-    orderPrescriptions: "https://app.belvederepharmacy.net/#/auth/signin",
+      "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+    orderPrescriptions: "https://app.kidbrookepharmacy.net/#/auth/signin",
   },
   appStore: {
-    ios: "https://apps.apple.com/us/app/belvedere-pharmacy/id6670758281",
+    ios: "https://apps.apple.com/us/app/kidbrooke-pharmacy/id6670758281",
     android:
-      "https://play.google.com/store/apps/details?id=net.belvederepharmacy.app",
+      "https://play.google.com/store/apps/details?id=net.kidbrookepharmacy.app",
   },
 };
 
@@ -107,14 +107,14 @@ export const INTERNAL_LINKS = {
 };
 
 export const BUSINESS_PROFILE = {
-  name: "Belvedere Pharmacy",
+  name: "Kidbrooke Pharmacy",
   propertyName: "OAKHURST",
   streetName: "ST PAULS WOOD HILL",
   region: "Orpington, Kent",
   postCode: "BR5 2SR",
   openingHours: "Mon-Fri: 9am-6:30pm, Sat: 9am-2pm",
   phone: "+44 (0) 1234 567890",
-  email: "info@belvederepharmacy.com",
+  email: "info@kidbrookepharmacy.com",
 };
 
 export const MENU_LINKS = [
@@ -529,7 +529,7 @@ export const WHY_CHOOSE_US_SERVICES = [
 
 export const CTA_SECTION_FEATURES_LIST = [
   "Same-day prescription fulfillment",
-  "Free medication delivery in Belvedere",
+  "Free medication delivery in Kidbrooke",
   "Private consultation rooms",
   "No-appointment health checks",
   "Emergency on-call service",

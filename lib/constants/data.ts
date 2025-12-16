@@ -147,7 +147,7 @@ export const PFP_CONDITIONS = [
     title: "Ear Pains",
     image: earPainImage,
     description:
-      "Treatment is suitable for children aged between 1 and 17 years. For those over 18, GP consultations are free at Belvedere Pharmacy. Our pharmacists are specially trained to diagnose and treat ear infections. We understand ear troubles can be frustrating, so our dedicated healthcare team is here to help.",
+      "Treatment is suitable for children aged between 1 and 17 years. For those over 18, GP consultations are free at Kidbrooke Pharmacy. Our pharmacists are specially trained to diagnose and treat ear infections. We understand ear troubles can be frustrating, so our dedicated healthcare team is here to help.",
     serviceId: "ear-pain",
     badge: "Ages 1-17",
     color: "from-primary/20 to-primary/5",
@@ -158,7 +158,7 @@ export const PFP_CONDITIONS = [
     title: "Infected Insect Bites",
     image: insectBiteImage,
     description:
-      "For those dealing with complications from insect bites, Belvedere Pharmacy provides comprehensive care. Our skilled team is ready to assess and treat infected insect bite concerns, ensuring your swift and effective recovery with professional and compassionate care.",
+      "For those dealing with complications from insect bites, Kidbrooke Pharmacy provides comprehensive care. Our skilled team is ready to assess and treat infected insect bite concerns, ensuring your swift and effective recovery with professional and compassionate care.",
     serviceId: "skin-infection",
     badge: "All Ages",
     color: "from-chart-3/20 to-chart-3/5",
@@ -180,7 +180,7 @@ export const PFP_CONDITIONS = [
     title: "Shingles",
     image: shinglesImage,
     description:
-      "If you are experiencing painful rashes, blisters, or itching, our healthcare team at Belvedere Pharmacy is here to help. We offer assessment, treatment, and support for effective shingles management, with compassionate, professional care to guide you through your recovery journey.",
+      "If you are experiencing painful rashes, blisters, or itching, our healthcare team at Kidbrooke Pharmacy is here to help. We offer assessment, treatment, and support for effective shingles management, with compassionate, professional care to guide you through your recovery journey.",
     serviceId: "shingles",
     badge: "Urgent",
     color: "from-destructive/20 to-destructive/5",
@@ -191,7 +191,7 @@ export const PFP_CONDITIONS = [
     title: "Sinus Infection",
     image: sinusInfectionImage,
     description:
-      "Belvedere Pharmacy offers treatment for sinusitis. If you are experiencing a stuffy nose, headache, or facial pain, we can help. Our services include assessment, treatment, and guidance for effective sinus infection management, with professional support for your journey to relief.",
+      "Kidbrooke Pharmacy offers treatment for sinusitis. If you are experiencing a stuffy nose, headache, or facial pain, we can help. Our services include assessment, treatment, and guidance for effective sinus infection management, with professional support for your journey to relief.",
     serviceId: "sinus-infection",
     badge: "Common",
     color: "from-primary/20 to-primary/5",
@@ -202,7 +202,7 @@ export const PFP_CONDITIONS = [
     title: "Sore Throat Consultations",
     image: soreThroatImage,
     description:
-      "Discover prompt and effective care for sore throats at Belvedere Pharmacy. If a scratchy, irritated throat is slowing you down, we have the remedy to restore your comfort. Our accessible services provide quick assessment and treatment to help you feel better quickly.",
+      "Discover prompt and effective care for sore throats at Kidbrooke Pharmacy. If a scratchy, irritated throat is slowing you down, we have the remedy to restore your comfort. Our accessible services provide quick assessment and treatment to help you feel better quickly.",
     serviceId: "sore-throat",
     badge: "Fast Relief",
     color: "from-chart-3/20 to-chart-3/5",
@@ -484,7 +484,7 @@ export const TEAM_MEMBERS = [
   },
 ];
 
-export const BELVEDERE_VALUES = [
+export const KIDBROOKE_VALUES = [
   {
     icon: IconHeart,
     title: "Compassion",
@@ -505,7 +505,7 @@ export const BELVEDERE_VALUES = [
     icon: IconUsers,
     title: "Community",
     description:
-      "We're proud to be part of the Belvedere community and are dedicated to improving the health and wellbeing of our neighbors.",
+      "We're proud to be part of the Kidbrooke community and are dedicated to improving the health and wellbeing of our neighbors.",
     color: "from-emerald-100 to-emerald-50",
     iconColor: "text-emerald-600",
   },

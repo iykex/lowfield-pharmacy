@@ -18,7 +18,7 @@ export default function Banner() {
       {/* Background Image with CDN optimization */}
       <Image
         src={bannerImage}
-        alt="Belvedere Pharmacy"
+        alt="Kidbrooke Pharmacy"
         fill
         className="object-cover object-center"
         priority

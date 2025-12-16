@@ -56,13 +56,13 @@ export default function MobileMenu() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/logo/belvedere-logo.png"
-                    alt="Belvedere"
+                     src="/logo/kidbrooke-logo.png"
+                     alt="Kidbrooke"
                     width={44}
                     height={44}
                   />
                   <SheetTitle className="text-left text-white">
-                    <span className="block font-bold leading-3">Belvedere</span>
+                    <span className="block font-bold leading-3">Kidbrooke</span>
                     <span className="text-xs text-white/70 font-normal">
                       Pharmacy
                     </span>

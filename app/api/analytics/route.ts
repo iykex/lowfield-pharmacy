@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
     const tbBaseUrl = process.env.TINYBIRD_API_BASE_URL;
     const tbDatasource = process.env.DATASOURCE_NAME;
-    const tbDatasourceToken = process.env.TINYBIRD_APPEND_TOKEN_BELVEDERE;
+    const tbDatasourceToken = process.env.TINYBIRD_APPEND_TOKEN_KIDBROOKE;
 
     if (!tbBaseUrl || !tbDatasource || !tbDatasourceToken) {
       console.error("Missing Tinybird configuration environment variables.");

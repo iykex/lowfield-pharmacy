@@ -13,7 +13,7 @@ export function WhyChooseUs() {
         <SectionHeader heading="Why choose us" />
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="text-section-header font-bold">
-            Why Choose Belvedere
+            Why Choose Kidbrooke
           </h2>
           <p className="text-base text-muted-foreground">
             We combine expertise, convenience, and personalized care to deliver

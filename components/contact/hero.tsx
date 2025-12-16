@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-6 pt-4">
             <div className="flex items-center gap-2 text-white/80">
               <Mail className="size-5 text-primary" />
-              <span>info@belvederepharmacy.com</span>
+              <span>info@kidbrookepharmacy.com</span>
             </div>
           </div>
         </div>
