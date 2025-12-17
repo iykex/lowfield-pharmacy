@@ -23,7 +23,7 @@ import {
 import useNavigationMenu from "@/hooks/use-navigation-menu";
 import { cn } from "@/lib/utils";
 import { ButtonVariants } from "@/lib/types/general";
-import CookieConsentDialogue from "../general/cookie-consent";
+// import CookieConsentDialogue from "../general/cookie-consent";
 import { track } from "@/lib/analytics/tracker";
 
 export default function MobileMenu() {
@@ -51,13 +51,13 @@ export default function MobileMenu() {
           className="w-full h-full sm:w-[350px] p-0 border-0 bg-background [&>button]:hidden"
         >
           {/* Mobile Menu Header */}
-          <div className="bg-[#002f4b] p-6 pb-8">
+          <div className="bg-foreground dark:bg-background p-6 pb-8">
             <SheetHeader className="mb-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Image
-                     src="/logo/kidbrooke-logo.png"
-                     alt="Kidbrooke"
+                    src="/logo/kidbrooke-logo.png"
+                    alt="Kidbrooke"
                     width={44}
                     height={44}
                   />
@@ -91,7 +91,7 @@ export default function MobileMenu() {
                     </p>
                   </div>
                 </Link>
-                <CookieConsentDialogue bubbleStateClassName="lg:hidden absolute left-[85%] bottom-2" />
+                {/* <CookieConsentDialogue bubbleStateClassName="lg:hidden absolute left-[85%] bottom-2" /> */}
               </div>
 
               <div className="flex gap-3">

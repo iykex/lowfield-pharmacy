@@ -42,7 +42,7 @@ export default function CookieConsentDialogue({
           track(TRACKING_EVENTS.cookieToggleButton, "coookie button toggled");
         }}
         className={cn(
-          "fixed bottom-6 left-6 z-40 lg:size-10  rounded-full shadow-lg transition-all duration-300 hover:scale-110",
+          "fixed bottom-4 left-6 z-40 size-9 lg:size-10  rounded-full shadow-lg transition-all duration-300 hover:scale-110",
           "bg-card border border-border",
           "hover:shadow-xl group",
           bubbleStateClassName
