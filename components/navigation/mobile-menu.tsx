@@ -23,7 +23,7 @@ import {
 import useNavigationMenu from "@/hooks/use-navigation-menu";
 import { cn } from "@/lib/utils";
 import { ButtonVariants } from "@/lib/types/general";
-import CookieConsentDialogue from "../general/cookie-consent";
+// import CookieConsentDialogue from "../general/cookie-consent";
 import { track } from "@/lib/analytics/tracker";
 
 export default function MobileMenu() {
@@ -51,18 +51,18 @@ export default function MobileMenu() {
           className="w-full h-full sm:w-[350px] p-0 border-0 bg-background [&>button]:hidden"
         >
           {/* Mobile Menu Header */}
-          <div className="bg-[#002f4b] p-6 pb-8">
+          <div className="bg-foreground dark:bg-background p-6 pb-8">
             <SheetHeader className="mb-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/logo/belvedere-logo.png"
-                    alt="Belvedere"
+                    src="/logo/kidbrooke-logo.png"
+                    alt="Kidbrooke"
                     width={44}
                     height={44}
                   />
                   <SheetTitle className="text-left text-white">
-                    <span className="block font-bold leading-3">Belvedere</span>
+                    <span className="block font-bold leading-3">Kidbrooke</span>
                     <span className="text-xs text-white/70 font-normal">
                       Pharmacy
                     </span>
@@ -91,7 +91,7 @@ export default function MobileMenu() {
                     </p>
                   </div>
                 </Link>
-                <CookieConsentDialogue bubbleStateClassName="lg:hidden absolute left-[85%] bottom-2" />
+                {/* <CookieConsentDialogue bubbleStateClassName="lg:hidden absolute left-[85%] bottom-2" /> */}
               </div>
 
               <div className="flex gap-3">

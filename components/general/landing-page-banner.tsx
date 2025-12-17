@@ -5,29 +5,21 @@ import { ArrowRight, BadgeCheckIcon, Download } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import bannerImage from "@/public/ui/home-banner.png";
 import {
   LANDING_PAGE_ACTION_BUTTONS,
   APP_STORES,
 } from "@/lib/constants/general";
 import { track } from "@/lib/analytics/tracker";
+import { BackgroundCarousel } from "../home/hero-carousel";
+import curvedArrow from "@/public/elements/curved-arrow.svg";
+import lines from "@/public/elements/lines.svg";
 
 export default function Banner() {
   return (
     <section className="h-screen overflow-hidden relative">
-      {/* Background Image with CDN optimization */}
-      <Image
-        src={bannerImage}
-        alt="Belvedere Pharmacy"
-        fill
-        className="object-cover object-center"
-        priority
-        quality={85}
-        placeholder="blur"
-      />
-
+      <BackgroundCarousel />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#001a33]/95 via-[#001a33]/80 to-[#001a33]/40 dark:from-[#001122]/95 dark:via-[#001122]/80 dark:to-[#001122]/30" />
+      <div className="absolute inset-0 bg-linear-to-r from-[#0a1f19]/90 via-[#0a1f19]/75 to-[#0a1f19]/20 dark:from-[#0a1f19]/95 dark:via-[#0a1f19]/80 dark:to-[#0a1f19]/30" />
       {/* Content */}
       <div className="relative w-full h-full flex items-center">
         <WidthConstraint>
@@ -36,7 +28,7 @@ export default function Banner() {
             <div className="lg:col-span-3 space-y-8">
               <Badge
                 variant="secondary"
-                className="py-1.5 px-4 text-sm font-bold bg-[#00BFFF]/10 text-[#00BFFF] border border-[#00BFFF]/20 backdrop-blur-sm"
+                className="py-1.5 px-4 text-sm font-bold bg-blue-500 text-white border border-[#00BFFF]/20 backdrop-blur-sm"
               >
                 <BadgeCheckIcon className="size-4 mr-2" />
                 NHS Services Available
@@ -79,10 +71,12 @@ export default function Banner() {
                   </Button>
                 ))}
               </div>
+              <Image src={curvedArrow} alt="arrow" width={100} height={100} />
             </div>
 
             {/* Right Side - Download App Section (Desktop Only) - Takes 2 columns */}
-            <div className="hidden lg:flex lg:col-span-2 justify-center items-center">
+            <div className="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+              <Image src={lines} alt="lines" className="absolute z-0" />
               <div className="relative">
                 {/* Pulsing ring animation */}
                 <div className="absolute -inset-3 animate-ping-slow rounded-3xl bg-primary/20" />
@@ -97,7 +91,7 @@ export default function Banner() {
 
                   <div className="space-y-5">
                     <div className="space-y-2">
-                      <p className="text-primary font-semibold text-xs uppercase tracking-wider">
+                      <p className="text-green-700 font-medium text-xs uppercase tracking-wider">
                         Mobile App
                       </p>
                       <h3 className="text-xl font-bold text-white">

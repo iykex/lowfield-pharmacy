@@ -10,6 +10,8 @@ import { NEWSLETTER_FEATURES } from "@/lib/constants/general";
 import { Spinner } from "../ui/spinner";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
+import patterns from "@/public/elements/pattern-2.svg";
+import Image from "next/image";
 
 export default function NewsletterSection() {
   const { isSubscribed, control, formState, handleSubmit, onSubmit } =
@@ -21,7 +23,7 @@ export default function NewsletterSection() {
         <div className="overflow-hidden">
           <div className="grid lg:grid-cols-2 rounded-2xl shadow-lg dark:shadow-xl/30 border border-input">
             {/* Left Column - Features  */}
-            <div className="bg-[#003b5c] dark:bg-transparent p-8 lg:p-12 space-y-8 md:space-y-10 rounded-2xl lg:rounded-r-none">
+            <div className="bg-gray-900 dark:bg-transparent p-8 lg:p-12 space-y-8 md:space-y-10 rounded-2xl lg:rounded-r-none">
               <div>
                 <div className="flex items-center gap-3 mb-5">
                   <div className="p-2 bg-primary/20 rounded-lg">
@@ -67,7 +69,12 @@ export default function NewsletterSection() {
 
             {/* Right Column - Form */}
             {isSubscribed ? (
-              <div className="flex items-center justify-center p-8 lg:p-12 dark:bg-[#003b5c] rounded-2xl lg:rounded-l-none">
+              <div className="flex items-center justify-center p-8 lg:p-12 dark:bg-card rounded-2xl lg:rounded-l-none relative">
+                <Image
+                  src={patterns}
+                  alt="patterns"
+                  className="absolute inset-0 object-cover w-full opacity-50"
+                />
                 <div className="text-center max-w-sm">
                   <div className="inline-block p-4 bg-green-100 dark:bg-green-900/30 rounded-full mb-6">
                     <CheckCircle2 className="w-12 h-12 text-green-600 dark:text-green-400" />
@@ -82,7 +89,12 @@ export default function NewsletterSection() {
                 </div>
               </div>
             ) : (
-              <div className="p-8 lg:p-12 flex flex-col justify-center dark:bg-[#003b5c] rounded-2xl lg:rounded-l-none">
+              <div className="p-8 lg:p-12 flex flex-col justify-center rounded-2xl lg:rounded-l-none relative">
+                <Image
+                  src={patterns}
+                  alt="patterns"
+                  className="absolute inset-0 object-cover w-full"
+                />
                 <div className="max-w-md mx-auto w-full">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 text-center">
                     Subscribe to Our Newsletter
@@ -110,7 +122,7 @@ export default function NewsletterSection() {
                                 aria-invalid={fieldState.invalid}
                                 autoComplete="off"
                                 placeholder="your.email@example.com"
-                                className="flex-1  rounded-l-xl border-0 border-r-0 rounded-r-none dark:bg-[#002f4b] dark:text-white"
+                                className="flex-1  rounded-l-xl border-0 border-r-0 rounded-r-none bg-background z-10 dark:text-white"
                                 onKeyDown={(e) =>
                                   e.key === "Enter" && handleSubmit(onSubmit)
                                 }
@@ -127,7 +139,7 @@ export default function NewsletterSection() {
                                 disabled={
                                   formState.isLoading || formState.isSubmitting
                                 }
-                                className="px-6 rounded-r-xl rounded-l-none bg-primary hover:bg-primary/90 font-semibold text-white"
+                                className="px-6 rounded-r-xl rounded-l-none bg-primary hover:bg-primary/90 font-semibold text-white z-10"
                               >
                                 {formState.isLoading ? (
                                   <Spinner />
@@ -153,7 +165,7 @@ export default function NewsletterSection() {
                       (item) => (
                         <div
                           key={item}
-                          className="flex items-center gap-2 px-3 py-2 bg-gray-50 dark:bg-[#002f4b] rounded-lg"
+                          className="flex items-center gap-2 px-3 py-2 bg-gray-50 dark:bg-card rounded-lg"
                         >
                           <CheckCircle2 className="w-4 h-4 text-green-500 dark:text-green-400" />
                           <span className="text-gray-700 dark:text-gray-300">

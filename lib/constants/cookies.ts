@@ -1,8 +1,8 @@
 import { CookiePreferences } from "../types/general";
 
-export const COOKIE_CONSENT_KEY = "belvedere_cookie_consent";
+export const COOKIE_CONSENT_KEY = "kidbrooke_cookie_consent";
 
-export const COOKIE_PREFERENCES_KEY = "belvedere_cookie_preferences";
+export const COOKIE_PREFERENCES_KEY = "kidbrooke_cookie_preferences";
 
 export const DEFAULT_PREFERENCES: CookiePreferences = {
   essential: true,

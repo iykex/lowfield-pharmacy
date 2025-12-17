@@ -4,14 +4,11 @@ import Image from "next/image";
 import WidthConstraint from "../shared/width-constraint";
 import { APP_STORES, DOWNLOAD_APP_FEATURES } from "@/lib/constants/general";
 import { ArrowRight, Download, Smartphone } from "lucide-react";
-import phoneAppScreenshot from "@/public/ui/phone-app-screenshot.png";
 import mobileApp from "@/public/ui/mobile-app.png";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { track } from "@/lib/analytics/tracker";
 
 export default function DownloadAppSection() {
-  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -50,7 +47,7 @@ export default function DownloadAppSection() {
                 return (
                   <div
                     key={item.description}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 dark:bg-[#003b5c] hover:bg-gray-100 dark:hover:bg-[#004d73] transition-all duration-300 border border-gray-200 dark:border-[#1a4d6e] group hover:-translate-y-1 z-10"
+                    className="flex items-start gap-4 p-4 rounded-xl bg-card hover:bg-gray-100 dark:hover:bg-[#007351] transition-all duration-300 border border-border group hover:-translate-y-1 z-10"
                   >
                     <div className="p-2.5 bg-primary/10 dark:bg-primary/20 rounded-lg shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="size-5 text-primary" />
@@ -104,8 +101,8 @@ export default function DownloadAppSection() {
               {/* Phone frame */}
               {mounted && (
                 <Image
-                  src={theme === "light" ? phoneAppScreenshot : mobileApp}
-                  alt="Belvedere Pharmacy App"
+                  src={mobileApp}
+                  alt="Kidbrooke Pharmacy App"
                   className="w-full h-auto object-contain rounded-4xl aspect-9/16"
                   quality={95}
                   priority
@@ -114,11 +111,11 @@ export default function DownloadAppSection() {
               )}
 
               {/* Floating badge */}
-              <div className="absolute -right-6 top-20 bg-white dark:bg-[#003b5c]/90 shadow-md rounded-xl p-4 animate-bounce-slow border border-gray-200 dark:border-[#1a4d6e]">
-                <div className="p-2 bg-primary/10 dark:bg-primary/20 rounded-lg">
+              <div className="absolute -right-6 top-20 bg-card shadow-md rounded-xl p-4 animate-bounce-slow border border-border">
+                <div className="p-2 bg-primary/10 rounded-lg">
                   <Download className="size-6 text-primary" />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white dark:bg-[#003b5c] rotate-45 border-r border-b border-gray-200 dark:border-[#1a4d6e]"></div>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 size-4 bg-card rotate-45 border-r border-b border-border"></div>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ export default function Banner() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
                 About{" "}
                 <span className="text-primary relative inline-block">
-                  Belvedere
+                  Kidbrooke
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
                     viewBox="0 0 200 8"
@@ -125,15 +125,15 @@ export default function Banner() {
                 {/* Pharmacy Image/Logo */}
                 <div className="flex items-center gap-4">
                   <Image
-                    src="/logo/belvedere-logo.png"
-                    alt="Belvedere Pharmacy"
+                    src="/logo/kidbrooke-logo.png"
+                    alt="Kidbrooke Pharmacy"
                     width={64}
                     height={64}
                     className="rounded-xl"
                   />
                   <div>
                     <h3 className="text-xl font-bold text-white">
-                      Belvedere Pharmacy
+                      Kidbrooke Pharmacy
                     </h3>
                     <p className="text-white/60 text-sm">
                       Your Local Healthcare Partner

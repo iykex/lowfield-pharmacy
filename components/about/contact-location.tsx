@@ -85,7 +85,7 @@ export default function ContactLocationSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Belvedere Pharmacy Location"
+                title="Kidbrooke Pharmacy Location"
                 className="w-full"
               />
             </div>

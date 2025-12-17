@@ -60,129 +60,87 @@
 
 :root {
   --radius: 0.75rem;
-
   --background: #ffffff;
-  --foreground: #002f4b;
-
+  --foreground: #0d3b2e;
   --card: #ffffff;
-  --card-foreground: #002f4b;
+  --card-foreground: #0d3b2e;
   --popover: #ffffff;
-  --popover-foreground: #002f4b;
-
-  /* Primary - Vibrant Sky Blue from uploaded images */
-  --primary: #3B9FE7;
+  --popover-foreground: #0d3b2e;
+  --primary: #266c2a;
   --primary-foreground: #ffffff;
-
-  --secondary: #f9fafb;
-  --secondary-foreground: #002f4b;
-
-  --destructive: #ff0000;
+  --secondary: #f1f8f4;
+  --secondary-foreground: #0d3b2e;
+  --destructive: #d32f2f;
   --destructive-foreground: #ffffff;
-
-  --muted: #f9fafb;
-  --muted-foreground: #6b7280;
-
-  --accent: #ffffff;
-  --accent-foreground: #002f4b;
-
-  --border: #dde2e6;
-  --input: #dde2e6;
-
-  --ring: #3B9FE7;
-
-  /* Chart colors - Updated to match new theme */
-  --chart-1: #3B9FE7;
-  --chart-2: #2E7D32;
-  --chart-3: #E91E63;
-  --chart-4: #7C4DFF;
-  --chart-5: #002f4b;
-
-  /* Accent pastel colors from uploaded images */
-  --accent-yellow: #FFF9E6;
-  --accent-yellow-dark: #F9A825;
-  --accent-mint: #E8F5E9;
-  --accent-mint-dark: #2E7D32;
-  --accent-pink: #FCE4EC;
-  --accent-pink-dark: #C62828;
-  --accent-lavender: #EDE7F6;
-  --accent-lavender-dark: #5E35B1;
-
-  --sidebar: #f9fafb;
-  --sidebar-foreground: #002f4b;
-  --sidebar-primary: #002f4b;
+  --muted: #e8f5e9;
+  --muted-foreground: #4a7c59;
+  --accent: #f1f8f4;
+  --accent-foreground: #0d3b2e;
+  --border: #d4e8e0;
+  --input: #d4e8e0;
+  --ring: #2e7d32;
+  --chart-1: #2e7d32;
+  --chart-2: #66bb6a;
+  --chart-3: #43a047;
+  --chart-4: #81c784;
+  --chart-5: #0d3b2e;
+  --accent-green: #4caf50;
+  --accent-green-dark: #1b5e20;
+  --accent-mint: #c8e6c9;
+  --accent-mint-dark: #388e3c;
+  --accent-sage: #a5d6a7;
+  --accent-sage-dark: #2e7d32;
+  --accent-lime: #dcedc8;
+  --accent-lime-dark: #689f38;
+  --sidebar: #f1f8f4;
+  --sidebar-foreground: #0d3b2e;
+  --sidebar-primary: #0d3b2e;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #ffffff;
-  --sidebar-accent-foreground: #002f4b;
-  --sidebar-border: #dde2e6;
-  --sidebar-ring: #3B9FE7;
-
-  /* --- FLUID TYPOGRAPHY SCALE --- */
-  /* Body Text: Scales from 13px (mobile) to 15px (desktop) */
+  --sidebar-accent-foreground: #0d3b2e;
+  --sidebar-border: #d4e8e0;
+  --sidebar-ring: #2e7d32;
   --text-base: clamp(0.8125rem, 0.21vw + 0.77rem, 0.9375rem);
-
-  /*Captions/Footer (11px to 12.5px) */
   --text-sm: clamp(0.6875rem, 0.16vw + 0.65rem, 0.78125rem);
-
-  /*Main Page Titles (28px to 40px) */
   --text-h1: clamp(1.75rem, 4.5vw + 1rem, 2.5rem);
-
-  /*Section Headers (20px to 30px) */
   --text-h2: clamp(1.25rem, 2.8vw + 0.9rem, 1.875rem);
-
-  /*Card Titles (16px to 22px) */
   --text-h3: clamp(1rem, 1.3vw + 0.9rem, 1.375rem);
-
-  /* Line Heights */
   --leading-tight: 1.1;
-  /* For H1, H2 */
   --leading-normal: 1.6;
-  /* For Body text*/
 }
 
 .dark {
-  /* --background: #002f4b; */
-  --background: #00162a;
-  --foreground: #ffffff;
-
-  --card: #003b5c;
-  --card-foreground: #ffffff;
-  --popover: #003b5c;
-  --popover-foreground: #ffffff;
-
-  /* Primary - Same vibrant blue for consistency */
-  --primary: #3B9FE7;
+  --background: #03130b;
+  --foreground: #e8f5e9;
+  --card: #1b3a2f;
+  --card-foreground: #e8f5e9;
+  --popover: #1b3a2f;
+  --popover-foreground: #e8f5e9;
+  --primary: #41ab44;
   --primary-foreground: #ffffff;
-
-  --secondary: #004d73;
-  --secondary-foreground: #ffffff;
-
-  --muted: #004d73;
-  --muted-foreground: #94a3b8;
-
-  --accent: #004d73;
-  --accent-foreground: #ffffff;
-
-  --destructive: #990000;
-
-  --border: #1a4d6e;
-  --input: #1a4d6e;
-
-  --ring: #3B9FE7;
-
-  --chart-1: #3B9FE7;
-  --chart-2: #4CAF50;
-  --chart-3: #F48FB1;
-  --chart-4: #B388FF;
-  --chart-5: #ffffff;
-
-  --sidebar: #00253b;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #3B9FE7;
+  --secondary: #2d5245;
+  --secondary-foreground: #e8f5e9;
+  --muted: #2d5245;
+  --muted-foreground: #a5d6a7;
+  --accent: #2d5245;
+  --accent-foreground: #e8f5e9;
+  --destructive: #ef5350;
+  --border: #2d5245;
+  --input: #2d5245;
+  --ring: #4caf50;
+  --chart-1: #4caf50;
+  --chart-2: #81c784;
+  --chart-3: #a5d6a7;
+  --chart-4: #c8e6c9;
+  --chart-5: #e8f5e9;
+  --sidebar: #0f2b21;
+  --sidebar-foreground: #e8f5e9;
+  --sidebar-primary: #4caf50;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #003b5c;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1a4d6e;
-  --sidebar-ring: #3B9FE7;
+  --sidebar-accent: #1b3a2f;
+  --sidebar-accent-foreground: #e8f5e9;
+  --sidebar-border: #2d5245;
+  --sidebar-ring: #4caf50;
 }
 
 @layer base {
@@ -271,7 +229,6 @@
 }
 
 @keyframes bounce-slow {
-
   0%,
   100% {
     transform: translateY(0);
@@ -288,49 +245,6 @@
 
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
-}
-
-.dashed-grid-bg {
-  position: relative;
-  background-color: var(--background);
-}
-
-.dashed-grid-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image: linear-gradient(to right,
-      var(--border) 1px,
-      transparent 1px),
-    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
-  background-size: 24px 24px;
-  mask-image: repeating-linear-gradient(to right,
-      white 0px,
-      white 3px,
-      transparent 3px,
-      transparent 8px),
-    repeating-linear-gradient(to bottom,
-      white 0px,
-      white 3px,
-      transparent 3px,
-      transparent 8px),
-    radial-gradient(ellipse 80% 80% at 100% 0%, white 40%, transparent 80%);
-  -webkit-mask-image: repeating-linear-gradient(to right,
-      white 0px,
-      white 3px,
-      transparent 3px,
-      transparent 8px),
-    repeating-linear-gradient(to bottom,
-      white 0px,
-      white 3px,
-      transparent 3px,
-      transparent 8px),
-    radial-gradient(ellipse 80% 80% at 100% 0%, white 40%, transparent 80%);
-  mask-composite: intersect;
-  -webkit-mask-composite: source-in;
-  height: 100%;
-  width: 100%;
 }
 
 @keyframes scroll {
@@ -432,108 +346,156 @@
 
   @keyframes smooth-wave-fill {
     0% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,-50 Q 1680,-10 1440,-50 Q 1200,-90 960,-50 Q 720,-10 480,-50 Q 240,-90 0,-50 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,-50 Q 1680,-10 1440,-50 Q 1200,-90 960,-50 Q 720,-10 480,-50 Q 240,-90 0,-50 Z"
+      );
     }
 
     5% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,25 Q 1680,65 1440,25 Q 1200,-15 960,25 Q 720,65 480,25 Q 240,-15 0,25 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,25 Q 1680,65 1440,25 Q 1200,-15 960,25 Q 720,65 480,25 Q 240,-15 0,25 Z"
+      );
     }
 
     10% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,100 Q 1680,140 1440,100 Q 1200,60 960,100 Q 720,140 480,100 Q 240,60 0,100 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,100 Q 1680,140 1440,100 Q 1200,60 960,100 Q 720,140 480,100 Q 240,60 0,100 Z"
+      );
     }
 
     15% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,175 Q 1680,135 1440,175 Q 1200,215 960,175 Q 720,135 480,175 Q 240,215 0,175 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,175 Q 1680,135 1440,175 Q 1200,215 960,175 Q 720,135 480,175 Q 240,215 0,175 Z"
+      );
     }
 
     20% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,250 Q 1680,290 1440,250 Q 1200,210 960,250 Q 720,290 480,250 Q 240,210 0,250 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,250 Q 1680,290 1440,250 Q 1200,210 960,250 Q 720,290 480,250 Q 240,210 0,250 Z"
+      );
     }
 
     25% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,325 Q 1680,285 1440,325 Q 1200,365 960,325 Q 720,285 480,325 Q 240,365 0,325 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,325 Q 1680,285 1440,325 Q 1200,365 960,325 Q 720,285 480,325 Q 240,365 0,325 Z"
+      );
     }
 
     30% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,400 Q 1680,440 1440,400 Q 1200,360 960,400 Q 720,440 480,400 Q 240,360 0,400 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,400 Q 1680,440 1440,400 Q 1200,360 960,400 Q 720,440 480,400 Q 240,360 0,400 Z"
+      );
     }
 
     35% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,475 Q 1680,435 1440,475 Q 1200,515 960,475 Q 720,435 480,475 Q 240,515 0,475 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,475 Q 1680,435 1440,475 Q 1200,515 960,475 Q 720,435 480,475 Q 240,515 0,475 Z"
+      );
     }
 
     40% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,550 Q 1680,590 1440,550 Q 1200,510 960,550 Q 720,590 480,550 Q 240,510 0,550 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,550 Q 1680,590 1440,550 Q 1200,510 960,550 Q 720,590 480,550 Q 240,510 0,550 Z"
+      );
     }
 
     45% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,625 Q 1680,585 1440,625 Q 1200,665 960,625 Q 720,585 480,625 Q 240,665 0,625 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,625 Q 1680,585 1440,625 Q 1200,665 960,625 Q 720,585 480,625 Q 240,665 0,625 Z"
+      );
     }
 
     50% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,700 Q 1680,740 1440,700 Q 1200,660 960,700 Q 720,740 480,700 Q 240,660 0,700 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,700 Q 1680,740 1440,700 Q 1200,660 960,700 Q 720,740 480,700 Q 240,660 0,700 Z"
+      );
     }
 
     55% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,775 Q 1680,735 1440,775 Q 1200,815 960,775 Q 720,735 480,775 Q 240,815 0,775 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,775 Q 1680,735 1440,775 Q 1200,815 960,775 Q 720,735 480,775 Q 240,815 0,775 Z"
+      );
     }
 
     60% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,850 Q 1680,890 1440,850 Q 1200,810 960,850 Q 720,890 480,850 Q 240,810 0,850 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,850 Q 1680,890 1440,850 Q 1200,810 960,850 Q 720,890 480,850 Q 240,810 0,850 Z"
+      );
     }
 
     65% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,925 Q 1680,885 1440,925 Q 1200,965 960,925 Q 720,885 480,925 Q 240,965 0,925 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,925 Q 1680,885 1440,925 Q 1200,965 960,925 Q 720,885 480,925 Q 240,965 0,925 Z"
+      );
     }
 
     70% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1000 Q 1680,1040 1440,1000 Q 1200,960 960,1000 Q 720,1040 480,1000 Q 240,960 0,1000 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1000 Q 1680,1040 1440,1000 Q 1200,960 960,1000 Q 720,1040 480,1000 Q 240,960 0,1000 Z"
+      );
     }
 
     75% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1075 Q 1680,1035 1440,1075 Q 1200,1115 960,1075 Q 720,1035 480,1075 Q 240,1115 0,1075 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1075 Q 1680,1035 1440,1075 Q 1200,1115 960,1075 Q 720,1035 480,1075 Q 240,1115 0,1075 Z"
+      );
     }
 
     80% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1150 Q 1680,1190 1440,1150 Q 1200,1110 960,1150 Q 720,1190 480,1150 Q 240,1110 0,1150 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1150 Q 1680,1190 1440,1150 Q 1200,1110 960,1150 Q 720,1190 480,1150 Q 240,1110 0,1150 Z"
+      );
     }
 
     85% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1225 Q 1680,1185 1440,1225 Q 1200,1265 960,1225 Q 720,1185 480,1225 Q 240,1265 0,1225 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1225 Q 1680,1185 1440,1225 Q 1200,1265 960,1225 Q 720,1185 480,1225 Q 240,1265 0,1225 Z"
+      );
     }
 
     90% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1300 Q 1680,1340 1440,1300 Q 1200,1260 960,1300 Q 720,1340 480,1300 Q 240,1260 0,1300 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1300 Q 1680,1340 1440,1300 Q 1200,1260 960,1300 Q 720,1340 480,1300 Q 240,1260 0,1300 Z"
+      );
     }
 
     95% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1375 Q 1680,1335 1440,1375 Q 1200,1415 960,1375 Q 720,1335 480,1375 Q 240,1415 0,1375 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1375 Q 1680,1335 1440,1375 Q 1200,1415 960,1375 Q 720,1335 480,1375 Q 240,1415 0,1375 Z"
+      );
     }
 
     100% {
-      clip-path: path("M 0,0 L 1920,0 L 1920,1450 Q 1680,1490 1440,1450 Q 1200,1410 960,1450 Q 720,1490 480,1450 Q 240,1410 0,1450 Z"
-        );
+      clip-path: path(
+        "M 0,0 L 1920,0 L 1920,1450 Q 1680,1490 1440,1450 Q 1200,1410 960,1450 Q 720,1490 480,1450 Q 240,1410 0,1450 Z"
+      );
     }
   }
+}
+
+.dashed-grid-bg {
+  position: relative;
+  background-color: var(--background);
+}
+
+.dashed-grid-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%234a7c59' stroke-width='1.5' opacity='0.2'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 100% 0%,
+    white 40%,
+    transparent 80%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 80% 80% at 100% 0%,
+    white 40%,
+    transparent 80%
+  );
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
 }
