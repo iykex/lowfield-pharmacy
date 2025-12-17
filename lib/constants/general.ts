@@ -1,16 +1,9 @@
 import {
   IconBell,
-  // IconBrandFacebook,
-  // IconBrandInstagram,
-  // IconBrandLinkedin,
   IconBrandWhatsapp,
-  // IconBrandX,
-  IconBug,
   IconCalendar,
   IconChartPieFilled,
   IconClockHour5,
-  // IconDroplet,
-  // IconEar,
   IconGift,
   IconHeart,
   IconMail,
@@ -21,7 +14,6 @@ import {
   IconStethoscope,
   IconUserSquareRounded,
   IconVaccine,
-  // IconWind,
   IconShieldCheck,
   IconAward,
   IconClock,
@@ -44,6 +36,9 @@ import { ContactFormFieldsMap } from "../types/general";
 import appStore from "@/public/ui/app-store.png";
 import playStore from "@/public/ui/play-store.png";
 import { TRACKING_EVENTS } from "./analytics";
+import cb1 from "@/public/ui/cb1.jpg";
+import cb2 from "@/public/ui/cb2.jpg";
+import cb3 from "@/public/ui/cb3.jpg";
 
 export const EXTERNAL_LINKS = {
   services: {
@@ -85,13 +80,13 @@ export const EXTERNAL_LINKS = {
   },
   actions: {
     bookAppointment:
-      "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
-    orderPrescriptions: "https://app.kidbrookepharmacy.net/#/auth/signin",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377",
+    orderPrescriptions: "https://app.kidbrookepharmacy.com/#/auth/signin",
   },
   appStore: {
-    ios: "https://apps.apple.com/us/app/kidbrooke-pharmacy/id6670758281",
+    ios: "https://apps.apple.com/us/app/kidbrooke-pharmacy/id6670598559",
     android:
-      "https://play.google.com/store/apps/details?id=net.kidbrookepharmacy.app",
+      "https://play.google.com/store/apps/details?id=com.kidbrookepharmacy.app",
   },
 };
 
@@ -923,3 +918,5 @@ export const CARD_COLORS_WHY_CHOOSE_US = [
   { bg: "bg-[#FCE4EC]", icon: "text-[#C62828]", hover: "bg-[#C62828]" },
   { bg: "bg-[#EDE7F6]", icon: "text-[#5E35B1]", hover: "bg-[#5E35B1]" },
 ];
+
+export const CAROUSEL_BANNER = [cb1, cb2, cb3];

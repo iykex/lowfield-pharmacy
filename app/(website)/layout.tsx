@@ -33,11 +33,7 @@ export default function RootLayout({
             <footer className="w-full bg-foreground dark:bg-background">
               <Footer />
             </footer>
-
-            {/* Global Floating Chatbot */}
             <FAQChatbot />
-
-            {/* Cookie Consent Dialog */}
             <CookieConsent />
           </PageTracker>
         </ThemeProvider>

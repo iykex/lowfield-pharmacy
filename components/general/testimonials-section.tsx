@@ -9,16 +9,22 @@ import Link from "next/link";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
 import { INTERNAL_LINKS } from "@/lib/constants/general";
+import patterns from "@/public/elements/pattern.svg";
 
 export default function Testimonials() {
   const { currentIndex, goToTestimonial } = useTestimonial();
   const currentTestimonial = TESTIMONIALS[currentIndex];
 
   return (
-    <section className="py-20 bg-[#002f4b] relative overflow-hidden">
+    <section className="py-20 bg-gray-900 dark:bg-[#071a11] relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />
+      <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
+      <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />
+      <Image
+        src={patterns}
+        alt="patterns"
+        className="absolute inset-0 object-cover w-full opacity-50"
+      />
 
       <WidthConstraint className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
