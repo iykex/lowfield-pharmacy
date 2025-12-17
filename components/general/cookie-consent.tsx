@@ -8,7 +8,7 @@ import useCookiesPreferences from "@/hooks/use-cookies-preferences";
 import { COOKIE_PREFERENCES_ITEMS } from "@/lib/constants/cookies";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
-import { INTERNAL_LINKS } from "@/app/general";
+import { INTERNAL_LINKS } from "@/lib/constants/general";
 
 export default function CookieConsentDialogue({
   bubbleStateClassName,

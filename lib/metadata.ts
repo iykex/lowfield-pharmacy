@@ -1,27 +1,34 @@
 import { Metadata } from "next";
+import { BUSINESS_PROFILE } from "./constants/general";
 
 // Site configuration - uses environment variable or defaults to production URL
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://kidbrookepharmacy.net";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://kidbrookepharmacy.net";
 const SITE_NAME = "Kidbrooke Pharmacy";
 
 export const rootMetadata: Metadata = {
   title: SITE_NAME,
-  description:
-    "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
+  description: `Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in ${BUSINESS_PROFILE.propertyName}, ${BUSINESS_PROFILE.streetName}, ${BUSINESS_PROFILE.region}, ${BUSINESS_PROFILE.postCode} .`,
   keywords: [
     "Pharmacy",
+    "Drug Store",
+    "Medicine",
+    "Drugs",
     "NHS Pharmacy",
     "Kidbrooke Pharmacy",
     "Prescription",
     "Health",
     "Medicine",
     "Healthcare",
-    "Kent Pharmacy",
     "Community Pharmacy",
     "NHS Services",
     "Pharmacy First",
     "Prescription Delivery",
     "Health Consultation",
+    ` ${BUSINESS_PROFILE.propertyName}`,
+    ` ${BUSINESS_PROFILE.streetName}`,
+    ` ${BUSINESS_PROFILE.region}`,
+    ` ${BUSINESS_PROFILE.postCode}`,
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
@@ -45,8 +52,7 @@ export const rootMetadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
     title: SITE_NAME,
-    description:
-      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
+    description: `Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in ${BUSINESS_PROFILE.propertyName}, ${BUSINESS_PROFILE.streetName}, ${BUSINESS_PROFILE.region}, ${BUSINESS_PROFILE.postCode} .`,
     images: [
       {
         url: `${SITE_URL}/og-image.png`,
@@ -94,7 +100,7 @@ export function getMetadata(
   image?: string
 ): Metadata {
   const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
-  const pageDescription = description || rootMetadata.description as string;
+  const pageDescription = description || (rootMetadata.description as string);
   const pageUrl = path ? `${SITE_URL}${path}` : SITE_URL;
   const pageImage = image || `${SITE_URL}/og-image.png`;
 

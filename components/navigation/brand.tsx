@@ -1,6 +1,6 @@
 "use client";
 import useNavigationMenu from "@/hooks/use-navigation-menu";
-import { INTERNAL_LINKS } from "@/app/general";
+import { INTERNAL_LINKS } from "@/lib/constants/general";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";

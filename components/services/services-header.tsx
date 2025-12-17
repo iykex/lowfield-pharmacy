@@ -3,17 +3,18 @@ import Image from "next/image";
 import WidthConstraint from "../shared/width-constraint";
 import { Button } from "../ui/button";
 import { ArrowRight, Calendar, CheckCircle, Video } from "lucide-react";
-import elderlyCouple from "@/public/ui/elderly-couple.jpg";
+import bookingCouple from "@/public/ui/booking.png";
 import Link from "next/link";
-import { EXTERNAL_LINKS } from "@/app/general";
+import { EXTERNAL_LINKS } from "@/lib/constants/general";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
 import { track } from "@/lib/analytics/tracker";
+import curvedArrow from "@/public/elements/curved-arrow.svg";
 
 export function ServicesHeading() {
   return (
     <section className="pt-32 pb-20 bg-background">
       <WidthConstraint className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 place-items-center">
           {/* LEFT COL - Content */}
           <div className="space-y-6 max-w-xl">
             {/* Badge */}
@@ -54,7 +55,7 @@ export function ServicesHeading() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-2">
+            <div className="pt-2 space-y-4">
               <Button
                 asChild
                 size="lg"
@@ -75,23 +76,21 @@ export function ServicesHeading() {
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
+              <Image src={curvedArrow} alt="arrow" width={100} height={100} />
             </div>
           </div>
 
           {/* RIGHT COL - Image */}
-          <div className="hidden lg:block relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src={elderlyCouple}
-                alt="Healthcare Services"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                placeholder="blur"
-              />
-            </div>
-          </div>
+
+          <Image
+            src={bookingCouple}
+            alt="Healthcare Services"
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            placeholder="blur"
+          />
         </div>
       </WidthConstraint>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ServiceCard from "./service-card";
-import { SERVICE_CATEGORIES } from "@/app/general";
+import { SERVICE_CATEGORIES } from "@/lib/constants/general";
 import { SERVICES_LIST } from "@/lib/constants/data";
 import WidthConstraint from "../shared/width-constraint";
 

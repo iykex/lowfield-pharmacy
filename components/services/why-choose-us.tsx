@@ -1,14 +1,14 @@
 import {
   CARD_COLORS_WHY_CHOOSE_US,
   WHY_CHOOSE_US_SERVICES,
-} from "@/app/general";
+} from "@/lib/constants/general";
 import WidthConstraint from "../shared/width-constraint";
 import SectionHeader from "../general/section-divider-head";
 import { cn } from "@/lib/utils";
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-16 bg-[#FFF9E6] dark:bg-cyan-950">
+    <section className="relative py-16 bg-card">
       <WidthConstraint className="relative space-y-12">
         <SectionHeader heading="Why choose us" />
         <div className="text-center max-w-3xl mx-auto space-y-2">
@@ -33,9 +33,8 @@ export function WhyChooseUs() {
               <div
                 key={index}
                 className={cn(
-                  "group relative rounded-3xl overflow-hidden shadow-md transition-all duration-500 ease-in-out border border-input/10",
-                  colorSet.bg,
-                  "dark:bg-card"
+                  "group relative rounded-3xl overflow-hidden shadow-md transition-all duration-500 ease-in-out border border-border",
+                  colorSet.bg
                 )}
               >
                 <div
@@ -49,10 +48,10 @@ export function WhyChooseUs() {
                 <div className="relative z-10 p-8">
                   {/* Icon container */}
                   <div className="mb-6">
-                    <div className="size-16 bg-white dark:bg-[#055482] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div className="size-16 bg-card dark:bg-transparent rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Icon
                         className={cn(
-                          "size-8 transition-all duration-300 ease-linear",
+                          "size-8 transition-all duration-300 ease-linear dark:group-hover:text-white",
                           colorSet.icon
                         )}
                       />
@@ -60,12 +59,12 @@ export function WhyChooseUs() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-card-title font-bold text-foreground group-hover:text-white transition-all duration-300 ease-linear min-h-[60px]">
+                  <h3 className="text-card-title font-bold text-foreground group-hover:text-white transition-all duration-300 ease-linear min-h-[60px] dark:text-background">
                     {feature.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-muted-foreground text-center group-hover:text-white/90 text-sm leading-relaxed transition-colors duration-300">
+                  <p className="text-muted-foreground dark:text-primary dark:font-semibold text-center group-hover:text-white/90 text-sm leading-relaxed transition-colors duration-300">
                     {feature.description}
                   </p>
                 </div>

@@ -43,31 +43,30 @@ import cb3 from "@/public/ui/cb3.jpg";
 export const EXTERNAL_LINKS = {
   services: {
     stopSmokingServices:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5341",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5337",
 
     bloodPressureChecks:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5343",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5336",
     fluVaccinations:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5340",
-
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5335",
     emergencyContraception:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5339",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5338",
     covidVaccination:
-      "https://shop.kidbrookepharmacy.net/appointments/book/service/COVID-19%20Vaccine?pharmacy=378&originalServiceId=5342&type=redirection",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5334",
     earPain:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5349",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5332",
     infectedInsectBites:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5347",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5333",
     sinusInfection:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5348",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5327",
     urinaryTractInfection:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5344",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5329",
     bacterialSkinInfection:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5345",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5331",
     shingles:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5350",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5330",
     soreThroatConsultations:
-      "https://app.kidbrookepharmacy.net/#/guest/appointments?pharmacyId=378&serviceId=5346",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5328",
   },
   socials: {
     facebook: "",

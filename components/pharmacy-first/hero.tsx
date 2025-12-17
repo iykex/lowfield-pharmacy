@@ -5,10 +5,11 @@ import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import bannerImage from "@/public/ui/pfp-banner.png";
-import { EXTERNAL_LINKS } from "@/app/general";
+import heroImage from "@/public/ui/pfp-banner.png";
+import { EXTERNAL_LINKS } from "@/lib/constants/general";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
+import curvedArrow from "@/public/elements/curved-arrow.svg";
 
 export function HeroSection() {
   return (
@@ -61,9 +62,10 @@ export function HeroSection() {
                 <ArrowRight className="size-6.5 stroke-3 transition-all ease-in-out duration-400 group-hover:translate-x-1" />
               </Link>
             </Button>
+            <Image src={curvedArrow} alt="arrow" width={100} height={100} />
           </div>
           <div>
-            <Image src={bannerImage} alt="banner" placeholder="blur" />
+            <Image src={heroImage} alt="banner" placeholder="blur" />
           </div>
         </WidthConstraint>
       </div>

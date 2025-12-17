@@ -5,7 +5,7 @@ import {
   FOOTER_LINKS,
   LEGAL_LINKS,
   SOCIAL_LINKS,
-} from "@/app/general";
+} from "@/lib/constants/general";
 import WidthConstraint from "../shared/width-constraint";
 import { track } from "@/lib/analytics/tracker";
 

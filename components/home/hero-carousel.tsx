@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import { CAROUSEL_BANNER } from "@/lib/constants";
+import { CAROUSEL_BANNER } from "@/lib/constants/general";
 
 export function BackgroundCarousel() {
   const plugin = useRef(Autoplay({ delay: 10000, stopOnInteraction: false }));

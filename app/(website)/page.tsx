@@ -1,12 +1,12 @@
-import DownloadAppSection from "@/components/general/download-app-section";
-import KeyBenefits from "@/components/general/key-benefits";
-import Banner from "@/components/general/landing-page-banner";
+import DownloadAppSection from "@/components/home/download-app-section";
+import KeyBenefits from "@/components/home/key-benefits";
+import Banner from "@/components/home/landing-page-banner";
 import Menu from "@/components/navigation/navigation-menu";
-import NewsletterSection from "@/components/general/newsletter";
-import { OurProcessSection } from "@/components/general/our-process-section";
-import { NHSPharmacyFirstSection } from "@/components/general/pharmacy-first-services-section";
-import PharmacyServicesMarquee from "@/components/general/pharmacy-services-marquee-section";
-import Testimonials from "@/components/general/testimonials-section";
+import NewsletterSection from "@/components/home/newsletter";
+import { OurProcessSection } from "@/components/home/our-process-section";
+import { NHSPharmacyFirstSection } from "@/components/home/pharmacy-first-services-section";
+import PharmacyServicesMarquee from "@/components/home/pharmacy-services-marquee-section";
+import Testimonials from "@/components/home/testimonials-section";
 
 export default function LandingPage() {
   return (

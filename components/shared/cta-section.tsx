@@ -6,17 +6,23 @@ import {
   CTA_SECTION_CONTACT_INFO,
   EXTERNAL_LINKS,
   INTERNAL_LINKS,
-} from "@/app/general";
+} from "@/lib/constants/general";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
+import Image from "next/image";
+import pattern from "@/public/elements/pattern-3.svg";
 
 export default function CTASection() {
   return (
     <section className="overflow-hidden">
-      <WidthConstraint className="relative p-6 md:p-20 bg-[#002f4b] rounded-2xl">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[40px_40px]" />
+      <WidthConstraint className="relative p-6 md:p-20 bg-foreground dark:bg-background rounded-2xl">
+        <Image
+          src={pattern}
+          alt="pattern"
+          className="absolute inset-0  bg-cover bg-center w-full opacity-50"
+        />
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="text-white space-y-8">
@@ -79,7 +85,7 @@ export default function CTASection() {
           </div>
 
           {/* Right Column - Contact Card */}
-          <div className="bg-white dark:bg-[#03456a] rounded-2xl p-4 sm:p-8 shadow-2xl z-10">
+          <div className="bg-card rounded-2xl p-4 sm:p-8 shadow-2xl z-10">
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                 Get In Touch

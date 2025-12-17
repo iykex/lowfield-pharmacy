@@ -1,34 +1,16 @@
-import earPainImage from "@/public/conditions/ear-pain.jpg";
-import insectBiteImage from "@/public/conditions/insect-bite.jpg";
-import skinInfectionsImage from "@/public/conditions/skin-infections.jpg";
+import earPainImage from "@/public/conditions/ear-pain.png";
+import insectBiteImage from "@/public/conditions/insect-bite.png";
+import skinInfectionsImage from "@/public/conditions/skin-infections.png";
 import shinglesImage from "@/public/conditions/shingles.jpg";
-import sinusInfectionImage from "@/public/conditions/sinus-infection.jpg";
-import soreThroatImage from "@/public/conditions/sore-throat.jpeg";
+import sinusInfectionImage from "@/public/conditions/sinus-infection.png";
+import soreThroatImage from "@/public/conditions/sore-throat.jpg";
 import utiImage from "@/public/conditions/uti.jpg";
 import fluVaccineImage from "@/public/services/flu-vaccine.jpeg";
 import covidVaccineImage from "@/public/services/covid-vaccine.jpg";
 import pressureCheckImage from "@/public/services/pressure-check.jpg";
 import stopSmokingImage from "@/public/services/stop-smoking.jpg";
 import emergencyContraceptionImage from "@/public/services/emergency-contraception.jpg";
-// import minorAilmentImage from "@/public/services/minor-ailment.jpg";
-// import prescriptionDispensingImage from "@/public/services/prescription-dispensing.jpg";
-// import medicationReviewImage from "@/public/services/medication-review.jpg";
-// import weightManagementImage from "@/public/services/weight-management.jpeg";
-// import travelClinicImage from "@/public/services/travel-clinic.jpg";
-// import cholesterolTestsImage from "@/public/services/cholesterol-tests.jpg";
-// import diabetesScreeningImage from "@/public/services/diabetes-screening.png";
-import adamPeaceImage from "@/public/testimonials/adam-peace.png";
-import alfrnaThompasImage from "@/public/testimonials/alfrina-thomas.png";
-import annMarieMarcroftImage from "@/public/testimonials/ann-marie-marcroft.png";
-import colinBradburyImage from "@/public/testimonials/colin-bradbury.png";
-import elizabethVousdenImage from "@/public/testimonials/elizabeth-vousden.png";
-import jenniferStevensImage from "@/public/testimonials/jennifer-stevens.png";
-import kennethShoreImage from "@/public/testimonials/kenneth-shore.png";
-import kimberleyEllisImage from "@/public/testimonials/kimberley-ellis.png";
-import lesleySellmanImage from "@/public/testimonials/lesley-sellman.png";
-import oebrnImage from "@/public/testimonials/oeben.png";
-import sawenAliImage from "@/public/testimonials/sawen-ali.png";
-import sebastianPodbornyImage from "@/public/testimonials/sebastian_podborny.png";
+import yomsterAImage from "@/public/testimonials/yomster.png";
 import {
   Award as IconAward,
   Zap as IconBolt,
@@ -43,101 +25,98 @@ import {
   Users as IconUsers,
   Wind as IconWind,
 } from "lucide-react";
-import { EXTERNAL_LINKS } from "../../app/general";
+import { EXTERNAL_LINKS } from "@/lib/constants/general";
 import { TRACKING_EVENTS } from "./analytics";
+import carolynWatkinsImage from "@/public/testimonials/carolynWatkins.png";
+import mariaKEImage from "@/public/testimonials/mariaKE.png";
+import danielleMarcroftImage from "@/public/testimonials/danielleMarcroft.png";
+import lauraAndrusImage from "@/public/testimonials/lauraAndrus.png";
+import callyMarleyImage from "@/public/testimonials/callyMarley.png";
+import anonymousImage from "@/public/testimonials/anonymous.png";
+import alisonGravesImage from "@/public/testimonials/alisonGraves.png";
+import normaFergusonImage from "@/public/testimonials/normaFerguson.png";
+import williamJohncockImage from "@/public/testimonials/williamJohncock.png";
 
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Adam Pearce",
+    name: "Yomster A",
     role: "Local Guide",
-    image: adamPeaceImage,
+    image: yomsterAImage,
     content:
-      "Often busy but well organised, well stocked and normally pretty quick if they need to order in. Very helpful if you call regarding prescriptions.",
+      "Very friendly and helpful staff with excellent customer service. The pharmacists give good advice on medication and prices are very reasonable.",
   },
   {
     id: 2,
-    name: "Elizabeth Vousden",
-    role: "Local Guide",
-    image: elizabethVousdenImage,
+    name: "Carolyn Watkins",
+    role: "Customer",
+    image: carolynWatkinsImage,
     content:
-      "Always polite, happy and they remember me by name every time. Glad they are always there for me when needed.",
+      "A brilliant local pharmacy, well run, polite and helpful, with a well-stocked shop.",
   },
   {
     id: 3,
-    name: "Sawen Ali",
+    name: "Maria K-E",
     role: "Customer",
-    image: sawenAliImage,
+    image: mariaKEImage,
     content:
-      "They are miles better than any experience I had away from home. Especially fantastic when I've needed emergency prescriptions and they've gone out of their way to sort things out. Always kind and professional.",
+      "Exceptional service. Even though I’m not a local customer, they promptly helped me with a prescription I couldn’t find anywhere else.",
   },
   {
     id: 4,
-    name: "Lesley Sellman",
-    role: "Local Guide",
-    image: lesleySellmanImage,
+    name: "Danielle Marcroft",
+    role: "Customer",
+    image: danielleMarcroftImage,
     content:
-      "Absolutely brilliant staff. I regularly pick up my medication from them. Always helpful and pleasant. I also have my flu and COVID vaccinations with them.",
+      "They always go above and beyond for their customers, keeping us informed and even sourcing items from other chemists when needed.",
   },
   {
     id: 5,
-    name: "Jennifer Stevens",
+    name: "Laura Andrus",
     role: "Customer",
-    image: jenniferStevensImage,
+    image: lauraAndrusImage,
     content:
-      "I got my vaccine booster done here and the whole team were amazing. They were working incredibly hard under pressure with closing time approaching. What a lovely team!",
+      "Wonderful, helpful staff. I’ve been using this pharmacy for over 20 years without any complaints.",
   },
   {
     id: 6,
-    name: "Sebastian Podborny",
+    name: "Cally Marley",
     role: "Customer",
-    image: sebastianPodbornyImage,
+    image: callyMarleyImage,
     content:
-      "First time I feel like someone really cares about the customer. They did more than I expected. Many thanks to Aisha and her team.",
+      "I’ve never been treated so well in any pharmacy. Michael, the owner, is one of the kindest and most caring pharmacists I’ve ever met.",
   },
   {
     id: 7,
-    name: "Colin Bradbury",
-    role: "Local Guide",
-    image: colinBradburyImage,
+    name: "Anonymous Reviewer",
+    role: "Customer",
+    image: anonymousImage,
     content:
-      "Went in for a COVID booster jab. I was politely directed and attended to quickly. Nice people — polite and professional.",
+      "I’ve been using this pharmacy for years. Great customer service — they remember my name and give excellent medical advice.",
   },
   {
     id: 8,
-    name: "Ann Marie Marcroft",
-    role: "Customer",
-    image: annMarieMarcroftImage,
-    content: "The staff are very friendly, reliable and welcoming.",
+    name: "Alison Graves",
+    role: "Local Guide",
+    image: alisonGravesImage,
+    content:
+      "The owner and team are incredibly caring, reassuring and encouraging. I couldn’t ask for better service.",
   },
   {
     id: 9,
-    name: "Alfrina Thomas",
-    role: "Customer",
-    image: alfrnaThompasImage,
+    name: "Norma Ferguson",
+    role: "Local Guide",
+    image: normaFergusonImage,
     content:
-      "Top box service from a local pharmacy. Efficient, helpful and pleasant staff.",
+      "The staff are always polite, helpful and professional. They genuinely care about my health and I’ve never been disappointed.",
   },
   {
     id: 10,
-    name: "Kenneth Shore",
+    name: "William Johncock",
     role: "Local Guide",
-    image: kennethShoreImage,
-    content: "Great local pharmacy with very helpful and knowledgeable staff.",
-  },
-  {
-    id: 11,
-    name: "OEBEN",
-    role: "Customer",
-    image: oebrnImage,
-    content: "Awesome environment and fast response.",
-  },
-  {
-    id: 12,
-    name: "Kimberley Ellis",
-    role: "Local Guide",
-    image: kimberleyEllisImage,
-    content: "Service was quick and friendly.",
+    image: williamJohncockImage,
+    content:
+      "Polite staff who were able to get medication my usual chemist could not.",
   },
 ];
 

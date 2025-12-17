@@ -1,6 +1,6 @@
 "use client";
 
-import { DARK_HERO_PAGES } from "@/app/general";
+import { DARK_HERO_PAGES } from "@/lib/constants/general";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
