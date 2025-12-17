@@ -2,7 +2,7 @@ import { ForwardRefExoticComponent, RefAttributes, SVGProps } from "react";
 import { Card, CardContent } from "../ui/card";
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { TRUST_BADGES_MARQUEE } from "@/lib/constants/general";
+import { TRUST_BADGES_MARQUEE } from "@/app/general";
 import WidthConstraint from "../shared/width-constraint";
 import SectionHeader from "./section-divider-head";
 

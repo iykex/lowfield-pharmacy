@@ -1,7 +1,7 @@
 "use client";
 
 import useNavigationMenu from "@/hooks/use-navigation-menu";
-import { ABOUT_US_INFO_BANNER } from "@/lib/constants/general";
+import { ABOUT_US_INFO_BANNER } from "@/app/general";
 import { cn } from "@/lib/utils";
 
 export default function InfoBar() {

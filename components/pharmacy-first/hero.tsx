@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import bannerImage from "@/public/ui/pfp-banner.png";
-import { EXTERNAL_LINKS } from "@/lib/constants/general";
+import { EXTERNAL_LINKS } from "@/app/general";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
 

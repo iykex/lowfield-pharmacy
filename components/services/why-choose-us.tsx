@@ -1,7 +1,7 @@
 import {
   CARD_COLORS_WHY_CHOOSE_US,
   WHY_CHOOSE_US_SERVICES,
-} from "@/lib/constants/general";
+} from "@/app/general";
 import WidthConstraint from "../shared/width-constraint";
 import SectionHeader from "../general/section-divider-head";
 import { cn } from "@/lib/utils";

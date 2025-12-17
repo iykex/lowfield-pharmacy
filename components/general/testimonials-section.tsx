@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
-import { INTERNAL_LINKS } from "@/lib/constants/general";
+import { INTERNAL_LINKS } from "@/app/general";
 import patterns from "@/public/elements/pattern.svg";
 
 export default function Testimonials() {

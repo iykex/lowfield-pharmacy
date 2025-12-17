@@ -43,7 +43,7 @@ import {
   Users as IconUsers,
   Wind as IconWind,
 } from "lucide-react";
-import { EXTERNAL_LINKS } from "./general";
+import { EXTERNAL_LINKS } from "../../app/general";
 import { TRACKING_EVENTS } from "./analytics";
 
 export const TESTIMONIALS = [

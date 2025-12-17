@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { ArrowRight, Calendar, CheckCircle, Video } from "lucide-react";
 import elderlyCouple from "@/public/ui/elderly-couple.jpg";
 import Link from "next/link";
-import { EXTERNAL_LINKS } from "@/lib/constants/general";
+import { EXTERNAL_LINKS } from "@/app/general";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";
 import { track } from "@/lib/analytics/tracker";
 

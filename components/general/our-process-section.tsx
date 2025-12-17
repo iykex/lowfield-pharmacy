@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { INTERNAL_LINKS, OUR_PROCESS_STEPS } from "@/lib/constants/general";
+import { INTERNAL_LINKS, OUR_PROCESS_STEPS } from "@/app/general";
 import WidthConstraint from "../shared/width-constraint";
 import SectionHeader from "./section-divider-head";
 

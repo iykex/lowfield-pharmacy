@@ -4,11 +4,7 @@ import Link from "next/link";
 import { Search, Home, MapPin, Phone, Mail, LucideIcon } from "lucide-react";
 import WidthConstraint from "@/components/shared/width-constraint";
 import { Button } from "@/components/ui/button";
-import {
-  NOT_FOUND_NAV_ITEMS,
-  NOT_FOUND_CONTACT_INFO,
-  INTERNAL_LINKS,
-} from "@/lib/constants/general";
+import { NOT_FOUND_NAV_ITEMS, NOT_FOUND_CONTACT_INFO } from "@/lib/constants";
 
 // Icon mapping
 const iconMap: Record<string, LucideIcon> = {
@@ -158,7 +154,7 @@ export default function NotFound() {
               size="lg"
               className="gap-2 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl px-8"
             >
-              <Link href={INTERNAL_LINKS.homePage}>
+              <Link href="/">
                 <Home className="h-5 w-5" />
                 Go to Homepage
               </Link>
@@ -169,7 +165,7 @@ export default function NotFound() {
               variant="outline"
               className="gap-2 border-2 border-primary text-primary hover:bg-primary/5 font-semibold rounded-xl px-8"
             >
-              <Link href={INTERNAL_LINKS.servicesPage}>
+              <Link href="/services">
                 <Search className="h-5 w-5" />
                 Browse Services
               </Link>

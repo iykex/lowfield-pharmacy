@@ -9,7 +9,7 @@ import {
   ABOUT_HERO_BADGES,
   ABOUT_CONTACT_INFO,
   ABOUT_PAGE_BANNER_BUTTONS,
-} from "@/lib/constants/general";
+} from "@/app/general";
 
 export default function Banner() {
   return (

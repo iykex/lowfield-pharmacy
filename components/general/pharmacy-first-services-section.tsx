@@ -2,7 +2,7 @@
 import { ArrowRight, Calendar, Shield, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { INTERNAL_LINKS } from "@/lib/constants/general";
+import { INTERNAL_LINKS } from "@/app/general";
 import WidthConstraint from "../shared/width-constraint";
 import { NHS_PHARMACY_FIRST_SERVICES } from "@/lib/constants/data";
 import { track } from "@/lib/analytics/tracker";

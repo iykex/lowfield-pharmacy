@@ -6,7 +6,7 @@ import { Controller } from "react-hook-form";
 import useNewsletter from "@/hooks/use-newsletter";
 import { Button } from "../ui/button";
 import WidthConstraint from "../shared/width-constraint";
-import { NEWSLETTER_FEATURES } from "@/lib/constants/general";
+import { NEWSLETTER_FEATURES } from "@/app/general";
 import { Spinner } from "../ui/spinner";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";

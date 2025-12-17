@@ -5,10 +5,7 @@ import { ArrowRight, BadgeCheckIcon, Download } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  LANDING_PAGE_ACTION_BUTTONS,
-  APP_STORES,
-} from "@/lib/constants/general";
+import { LANDING_PAGE_ACTION_BUTTONS, APP_STORES } from "@/app/general";
 import { track } from "@/lib/analytics/tracker";
 import { BackgroundCarousel } from "../home/hero-carousel";
 import curvedArrow from "@/public/elements/curved-arrow.svg";

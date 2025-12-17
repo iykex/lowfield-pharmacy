@@ -33,10 +33,10 @@ import {
   User as IconUser,
   MapPinned as IconLocation,
 } from "lucide-react";
-import { ContactFormFieldsMap } from "../types/general";
+import { ContactFormFieldsMap } from "../lib/types/general";
 import appStore from "@/public/ui/app-store.png";
 import playStore from "@/public/ui/play-store.png";
-import { TRACKING_EVENTS } from "./analytics";
+import { TRACKING_EVENTS } from "../lib/constants/analytics";
 import cb1 from "@/public/ui/cb1.jpg";
 import cb2 from "@/public/ui/cb2.jpg";
 import cb3 from "@/public/ui/cb3.jpg";

@@ -6,7 +6,7 @@ import {
   CTA_SECTION_CONTACT_INFO,
   EXTERNAL_LINKS,
   INTERNAL_LINKS,
-} from "@/lib/constants/general";
+} from "@/app/general";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { track } from "@/lib/analytics/tracker";

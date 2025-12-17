@@ -12,7 +12,7 @@ import {
   CONTACT_ITEMS_CONTACTS_PAGE,
   EXTERNAL_LINKS,
   OPENING_HOURS_CONTACTS_PAGE,
-} from "@/lib/constants/general";
+} from "@/app/general";
 import Link from "next/link";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/analytics";

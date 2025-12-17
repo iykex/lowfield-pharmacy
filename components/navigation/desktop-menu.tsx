@@ -1,5 +1,5 @@
 "use client";
-import { EXTERNAL_LINKS, MENU_LINKS } from "@/lib/constants/general";
+import { EXTERNAL_LINKS, MENU_LINKS } from "@/app/general";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "../ui/button";

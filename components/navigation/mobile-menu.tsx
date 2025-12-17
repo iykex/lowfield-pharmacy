@@ -19,7 +19,7 @@ import {
   CONTACT_INFO_MOBILE_MENU,
   EXTERNAL_LINKS,
   MENU_LINKS,
-} from "@/lib/constants/general";
+} from "@/app/general";
 import useNavigationMenu from "@/hooks/use-navigation-menu";
 import { cn } from "@/lib/utils";
 import { ButtonVariants } from "@/lib/types/general";

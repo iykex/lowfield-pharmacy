@@ -4,7 +4,7 @@ import {
   EXTERNAL_LINKS,
   INTERNAL_LINKS,
   KEY_BENEFITS_TEXTS,
-} from "@/lib/constants/general";
+} from "@/app/general";
 import { ArrowRight, Check, HandHelping } from "lucide-react";
 import Link from "next/link";
 
