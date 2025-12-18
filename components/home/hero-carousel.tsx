@@ -30,7 +30,7 @@ export function BackgroundCarousel() {
             <CarouselItem key={index} className="h-screen relative">
               <Image
                 src={image}
-                alt="Kidbrooke Pharmacy"
+                alt="Lowfield Pharmacy"
                 fill
                 className="object-cover object-center"
                 priority

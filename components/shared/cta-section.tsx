@@ -31,7 +31,7 @@ export default function CTASection() {
                 Ready to Get Started
               </span>
               <h2 className="text-xl sm:text-4xl font-bold tracking-tight mt-4 mb-4">
-                Experience the Kidbrooke Difference
+                Experience the Lowfield Difference
               </h2>
               <p className="text-white/80 sm:text-lg leading-relaxed max-w-lg pr-4 sm:pr-0">
                 Join thousands of satisfied patients who trust us with their

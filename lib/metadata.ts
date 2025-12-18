@@ -3,8 +3,8 @@ import { BUSINESS_PROFILE } from "./constants/general";
 
 // Site configuration - uses environment variable or defaults to production URL
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://kidbrookepharmacy.net";
-const SITE_NAME = "Kidbrooke Pharmacy";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://lowfieldpharmacy.net";
+const SITE_NAME = "Lowfield Pharmacy";
 
 export const rootMetadata: Metadata = {
   title: SITE_NAME,
@@ -15,7 +15,7 @@ export const rootMetadata: Metadata = {
     "Medicine",
     "Drugs",
     "NHS Pharmacy",
-    "Kidbrooke Pharmacy",
+    "Lowfield Pharmacy",
     "Prescription",
     "Health",
     "Medicine",
@@ -65,11 +65,11 @@ export const rootMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@kidbrookepharm",
-    creator: "@kidbrookepharm",
+    site: "@lowfieldpharm",
+    creator: "@lowfieldpharm",
     title: SITE_NAME,
     description:
-      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Kidbrooke, Kent.",
+      "Your trusted community pharmacy providing NHS services, prescriptions, health consultations, and personalized care in Lowfield, Kent.",
     images: [`${SITE_URL}/og-image.png`],
   },
   alternates: {

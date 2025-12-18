@@ -16,7 +16,7 @@ export function Footer() {
         {/* Column 1: Logo and social */}
         <div className="space-y-4">
           <h3 className="font-semibold text-card-title mb-2">
-            Kidbrooke Pharmacy
+            Lowfield Pharmacy
           </h3>
           <p className="text-white/70 text-sm sm:max-w-xs">
             Your trusted local pharmacy providing quality healthcare services to
@@ -84,7 +84,7 @@ export function Footer() {
       {/* Bottom section with copyright and links */}
       <div className="border-t mt-8 pt-6 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center">
         <p className="text-xs text-white/70">
-          &copy; {new Date().getFullYear()} Kidbrooke Pharmacy. All rights
+          &copy; {new Date().getFullYear()} Lowfield Pharmacy. All rights
           reserved.
         </p>
         <div className="flex flex-wrap gap-4">

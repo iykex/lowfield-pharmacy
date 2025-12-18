@@ -21,7 +21,7 @@ export default function OurStorySection() {
 
             <div className="space-y-4 text-gray-600 dark:text-white/60 leading-8.5 max-w-2xl lg:text-justify">
               <p className="text-lg ">
-                Kidbrooke Pharmacy was founded in 2020 with a simple mission: to
+                Lowfield Pharmacy was founded in 2020 with a simple mission: to
                 provide accessible, personalized healthcare to our local
                 community. What started as a small family-owned pharmacy has
                 grown into a trusted healthcare provider serving thousands of
@@ -52,7 +52,7 @@ export default function OurStorySection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src={ourStoryImage}
-                  alt="Kidbrooke Pharmacy Team"
+                  alt="Lowfield Pharmacy Team"
                   className="w-full h-auto object-cover"
                   priority
                   placeholder="blur"

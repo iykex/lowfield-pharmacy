@@ -1,10 +1,10 @@
 import { KnowledgeBaseItem } from "@/lib/types/chatbot";
 
 // Cache keys and durations
-export const VISITOR_NAME_KEY = "kidbrooke_visitor_name";
-export const VISITOR_NAME_EXPIRY_KEY = "kidbrooke_visitor_name_expiry";
-export const CHAT_HISTORY_KEY = "kidbrooke_chat_history";
-export const CHAT_LAST_ACTIVITY_KEY = "kidbrooke_chat_last_activity";
+export const VISITOR_NAME_KEY = "lowfield_visitor_name";
+export const VISITOR_NAME_EXPIRY_KEY = "lowfield_visitor_name_expiry";
+export const CHAT_HISTORY_KEY = "lowfield_chat_history";
+export const CHAT_LAST_ACTIVITY_KEY = "lowfield_chat_last_activity";
 export const CACHE_DURATION_MS = 4 * 60 * 60 * 1000; // 4 hours
 export const IDLE_THRESHOLD_MS = 15 * 60 * 1000; // 15 minutes
 
@@ -26,7 +26,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Book Appointment",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
       { label: "Pharmacy First", href: "/pharmacy-first", icon: "external" },
@@ -61,7 +61,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Book Review",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
     ],
@@ -73,7 +73,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Book Vaccination",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
       { label: "View Services", href: "/services", icon: "external" },
@@ -86,7 +86,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Order Now",
-        href: "https://app.kidbrookepharmacy.net/#/auth/signin",
+        href: "https://app.lowfieldpharmacy.net/#/auth/signin",
         icon: "prescription",
       },
     ],
@@ -107,12 +107,12 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
   {
     keywords: ["contact", "phone", "call", "email", "reach"],
     answer:
-      "You can reach us by phone at +44 (0) 1234 567890, email at info@kidbrookepharmacy.com, or visit us in person. For urgent medical advice when we're closed, call NHS 111.",
+      "You can reach us by phone at +44 (0) 1234 567890, email at info@lowfieldpharmacy.com, or visit us in person. For urgent medical advice when we're closed, call NHS 111.",
     actions: [
       { label: "Call Now", href: "tel:+441234567890", icon: "phone" },
       {
         label: "Send Email",
-        href: "mailto:info@kidbrookepharmacy.com",
+        href: "mailto:info@lowfieldpharmacy.com",
         icon: "external",
       },
     ],
@@ -142,7 +142,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
       { label: "View All Services", href: "/services", icon: "external" },
       {
         label: "Book Appointment",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
     ],
@@ -160,7 +160,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Book Consultation",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
     ],
@@ -172,7 +172,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
     actions: [
       {
         label: "Book Travel Clinic",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
     ],
@@ -185,7 +185,7 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
       { label: "Learn More", href: "/pharmacy-first", icon: "external" },
       {
         label: "Book Now",
-        href: "https://shop.kidbrookepharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
+        href: "https://shop.lowfieldpharmacy.net/appointments/viewallservices/all?pharmacy=378&type=redirection",
         icon: "calendar",
       },
     ],
@@ -201,19 +201,19 @@ export const KNOWLEDGE_BASE: KnowledgeBaseItem[] = [
   {
     keywords: ["superintendent", "pharmacist", "gphc", "registration"],
     answer:
-      "Our Superintendent Pharmacist is Michael Tweneboa-Koduah, GPhC registration number 2057431. Kidbrooke Pharmacy is operated by Meckay Limited (Company No. 06454698), registered in the UK.",
+      "Our Superintendent Pharmacist is Michael Tweneboa-Koduah, GPhC registration number 2057431. Lowfield Pharmacy is operated by Meckay Limited (Company No. 06454698), registered in the UK.",
     actions: [{ label: "About Us", href: "/about-us", icon: "external" }],
   },
   {
     keywords: ["company", "meckay", "registered", "business"],
     answer:
-      "Kidbrooke Pharmacy is operated by Meckay Limited, a UK registered company (Company No. 06454698). Our registered address is Oakhurst, St Pauls Wood Hill, BR5 2SR.",
+      "Lowfield Pharmacy is operated by Meckay Limited, a UK registered company (Company No. 06454698). Our registered address is Oakhurst, St Pauls Wood Hill, BR5 2SR.",
     actions: [{ label: "About Us", href: "/about-us", icon: "external" }],
   },
   {
     keywords: ["hello", "hi", "hey", "good morning", "good afternoon"],
     answer:
-      "Hello! 👋 Welcome to Kidbrooke Pharmacy. I'm here to help answer your questions about our services, opening hours, prescriptions, and more. What would you like to know?",
+      "Hello! 👋 Welcome to Lowfield Pharmacy. I'm here to help answer your questions about our services, opening hours, prescriptions, and more. What would you like to know?",
   },
   {
     keywords: ["thank", "thanks", "cheers", "appreciate"],

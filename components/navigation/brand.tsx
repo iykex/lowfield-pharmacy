@@ -14,8 +14,8 @@ export default function Brand() {
         className="relative group flex items-center gap-2 sm:gap-3"
       >
         <Image
-          src="/logo/kidbrooke-logo.png"
-          alt="Kidbrooke"
+          src="/logo/lowfield-logo.png"
+          alt="Lowfield"
           width={50}
           height={50}
           className="relative z-10 size-10"
@@ -30,7 +30,7 @@ export default function Brand() {
               isScrolled && "text-foreground"
             )}
           >
-            Kidbrooke
+            Lowfield
           </p>
           <p
             className={cn(

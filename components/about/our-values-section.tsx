@@ -1,4 +1,4 @@
-import { KIDBROOKE_VALUES } from "@/lib/constants/data";
+import { LOWFIELD_VALUES } from "@/lib/constants/data";
 import WidthConstraint from "../shared/width-constraint";
 import SectionHeader from "../general/section-divider-head";
 
@@ -13,13 +13,13 @@ export default function OurValuesSection() {
             Our <span className="text-primary">Guiding</span> Principles
           </h2>
           <p className="text-gray-600 dark:text-white/60 text-lg">
-            These core principles guide everything we do at Kidbrooke Pharmacy
+            These core principles guide everything we do at Lowfield Pharmacy
           </p>
         </div>
 
         {/* Values Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 p-5">
-          {KIDBROOKE_VALUES.map((value, index) => {
+          {LOWFIELD_VALUES.map((value, index) => {
             const Icon = value.icon;
             return (
               <div

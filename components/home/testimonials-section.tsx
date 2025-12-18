@@ -39,7 +39,7 @@ export default function Testimonials() {
               </h2>
               <p className="text-white/70 text-lg leading-relaxed max-w-md">
                 Hear what our patients have to say about their experience with
-                Kidbrooke Pharmacy.
+                Lowfield Pharmacy.
               </p>
             </div>
 

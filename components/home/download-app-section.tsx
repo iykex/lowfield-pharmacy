@@ -102,7 +102,7 @@ export default function DownloadAppSection() {
               {mounted && (
                 <Image
                   src={mobileApp}
-                  alt="Kidbrooke Pharmacy App"
+                  alt="Lowfield Pharmacy App"
                   className="w-full h-auto object-contain rounded-4xl aspect-9/16"
                   quality={95}
                   priority

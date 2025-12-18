@@ -37,7 +37,7 @@ export function HeroSection() {
 
             {/* Description */}
             <p className="text-gray-600 dark:text-white/60 text-lg leading-relaxed max-w-xl lg:text-justify">
-              At Kidbrooke Pharmacy, we prioritise the patient experience in our
+              At Lowfield Pharmacy, we prioritise the patient experience in our
               local community. Recognising the challenges in accessing GP
               services for common health concerns, we now offer Free NHS
               Consultations for our local community.

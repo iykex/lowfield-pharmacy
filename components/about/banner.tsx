@@ -39,7 +39,7 @@ export default function Banner() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
                 About{" "}
                 <span className="text-primary relative inline-block">
-                  Kidbrooke
+                  Lowfield
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
                     viewBox="0 0 200 8"
@@ -113,14 +113,14 @@ export default function Banner() {
                 <div className="relative flex items-center justify-between mb-8">
                   <div className="flex items-center gap-4">
                     <Image
-                      src="/logo/kidbrooke-logo.png"
-                      alt="Kidbrooke Pharmacy"
+                      src="/logo/lowfield-logo.png"
+                      alt="Lowfield Pharmacy"
                       width={56}
                       height={56}
                       className="rounded-xl shadow-sm"
                     />
                     <div>
-                      <h3 className="text-lg font-bold">Kidbrooke Pharmacy</h3>
+                      <h3 className="text-lg font-bold">Lowfield Pharmacy</h3>
                       <div className="flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                         <p className="text-xs text-slate-500 font-medium">

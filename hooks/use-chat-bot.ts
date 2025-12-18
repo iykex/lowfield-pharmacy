@@ -45,7 +45,7 @@ export function useChatbot() {
           {
             id: "welcome",
             role: "bot",
-            content: `Welcome back, ${cachedName}! 👋 I'm Bella, your Kidbrooke Pharmacy assistant. How can I help you today?`,
+            content: `Welcome back, ${cachedName}! 👋 I'm Bella, your Lowfield Pharmacy assistant. How can I help you today?`,
             timestamp: new Date(),
             actions: [
               {
@@ -69,7 +69,7 @@ export function useChatbot() {
           id: "ask-name",
           role: "bot",
           content:
-            "Hello! 👋 I'm Bella, your Kidbrooke Pharmacy assistant. Before we start, may I know your name?",
+            "Hello! 👋 I'm Bella, your Lowfield Pharmacy assistant. Before we start, may I know your name?",
           timestamp: new Date(),
         },
       ]);
@@ -112,7 +112,7 @@ export function useChatbot() {
       setVisitorNameState(name);
       setIsAskingName(false);
       response = {
-        answer: `Nice to meet you, ${name}! 😊 I'm here to help you with any questions about Kidbrooke Pharmacy. You can ask me about our services, opening hours, prescriptions, vaccinations, and more. What would you like to know?`,
+        answer: `Nice to meet you, ${name}! 😊 I'm here to help you with any questions about Lowfield Pharmacy. You can ask me about our services, opening hours, prescriptions, vaccinations, and more. What would you like to know?`,
         actions: [
           { label: "View Services", href: "/services", icon: "external" },
           {

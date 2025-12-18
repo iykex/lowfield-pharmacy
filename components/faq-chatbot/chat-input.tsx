@@ -77,7 +77,7 @@ export function ChatInput({
         <kbd className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded text-[9px]">
           Shift+Enter
         </kbd>{" "}
-        for new line • Powered by Kidbrooke Pharmacy
+        for new line • Powered by Lowfield Pharmacy
       </p>
     </div>
   );

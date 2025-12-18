@@ -32,7 +32,7 @@ export function ServicesHeading() {
 
             {/* Description */}
             <p className="text-gray-600 dark:text-white/60 text-lg leading-relaxed">
-              At Kidbrooke Pharmacy, our pharmacists offer a comprehensive range
+              At Lowfield Pharmacy, our pharmacists offer a comprehensive range
               of NHS-commissioned and private healthcare services. Get expert
               help from the comfort of your home with our video consultation
               service.

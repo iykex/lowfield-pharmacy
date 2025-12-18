@@ -160,7 +160,7 @@ export const PRIVACY_POLICY_SECTIONS = [
       "We are registered with the Information Commissioner's Office (ICO) under reference: 06454698.",
       "MECKAY LIMITED will be the controller of your personal data unless otherwise stated.",
       "Postal address: Oakhurst, St. Pauls Wood Hill, Orpington, England, BR5 2SR",
-      "Email address: Kidbrookepharmacy@yahoo.com",
+      "Email address: Lowfieldpharmacy@yahoo.com",
     ],
   },
   {
@@ -389,11 +389,11 @@ export const PRIVACY_POLICY_SECTIONS = [
     beforeText:
       "If you have any questions or comments, please contact us. For further information on data protection, please visit the Information Commissioner's Office (ICO) website. The ICO regulates data protection. If you feel that your information has not been handled correctly, you have the right to lodge a complaint with the ICO. You can contact them by calling 0303 123 1113.",
     contactInfo: {
-      name: "MECKAY LIMITED (Kidbrooke Pharmacy)",
+      name: "MECKAY LIMITED (Lowfield Pharmacy)",
       address1: "Oakhurst, St Pauls Wood Hill",
       address2: "Orpington, England, BR5 2SR",
       phone: "+44 (0) 1234 567890",
-      email: "Kidbrookepharmacy@yahoo.com",
+      email: "Lowfieldpharmacy@yahoo.com",
     },
   },
 ];
@@ -669,10 +669,10 @@ export const COOKIE_POLICY_DATA = [
     intro:
       "If you have questions about our cookie practices or how to manage your preferences, please contact us:",
     contactInfo: {
-      name: "Kidbrooke Pharmacy (MECKAY LIMITED)",
+      name: "Lowfield Pharmacy (MECKAY LIMITED)",
       address: ["Oakhurst, St Pauls Wood Hill", "Orpington, Kent BR5 2SR"],
       phone: "+44 (0) 1234 567890",
-      email: "info@kidbrookepharmacy.com",
+      email: "info@lowfieldpharmacy.com",
     },
   },
   {
@@ -717,7 +717,7 @@ export const TERMS_AND_CONDITIONS = [
     title: "Introduction",
     type: "paragraphs",
     content: [
-      "These terms and conditions (the 'Terms') govern your use of our online platform, kidbrookepharmacy.net (the 'Site') and our smartphone app for iOS and Android devices (the 'App') (the Site and the App being collectively referred to as 'our Platform'), as well as the Services and Products that are made available to you via the Platform.",
+      "These terms and conditions (the 'Terms') govern your use of our online platform, lowfieldpharmacy.net (the 'Site') and our smartphone app for iOS and Android devices (the 'App') (the Site and the App being collectively referred to as 'our Platform'), as well as the Services and Products that are made available to you via the Platform.",
       "We are MECKAY LIMITED, a company registered in England and Wales with company number 06454698 and our registered office at Oakhurst, St. Pauls Wood Hill, Orpington, England, BR5 2SR. We operate a pharmacy which is registered with the General Pharmaceutical Council (GPhC) and our GPhC registration number is 2057431.",
       "Our superintendent pharmacist is Michael Tweneboa-Koduah and their GPhC registration number is 2057431.",
       "Please read these Terms carefully and make sure that you understand them. If you wish to access the Products or Services or engage with us via our Platform, you will be asked to agree to these Terms. If you do not accept these Terms, you will not be allowed to access the Products or Services or engage with us via our Platform.",
@@ -800,7 +800,7 @@ export const TERMS_AND_CONDITIONS = [
     title: "Limitations of Liability",
     type: "bulletPoints",
     beforeText:
-      "To the extent permitted by law, Kidbrooke Pharmacy shall not be liable for:",
+      "To the extent permitted by law, Lowfield Pharmacy shall not be liable for:",
     bulletPoints: TERMS_LIABILITY,
   },
   {
@@ -809,7 +809,7 @@ export const TERMS_AND_CONDITIONS = [
     type: "paragraphs",
     content: [
       "We are committed to providing high-quality care. Our team is regulated by the GPhC and follows their standards and guidance.",
-      "If you wish to make a complaint, please contact us at info@kidbrookepharmacy.com or visit our pharmacy. We will investigate and respond to complaints within 10 working days.",
+      "If you wish to make a complaint, please contact us at info@lowfieldpharmacy.com or visit our pharmacy. We will investigate and respond to complaints within 10 working days.",
       "You also have the right to complain to the GPhC if you believe we have breached professional standards.",
     ],
   },
@@ -826,7 +826,7 @@ export const TERMS_AND_CONDITIONS = [
       {
         title: "9.2 Intellectual Property",
         description:
-          "All content on our website, including text, images, and logos, is the property of Kidbrooke Pharmacy and protected by copyright. You may not reproduce or distribute without permission.",
+          "All content on our website, including text, images, and logos, is the property of Lowfield Pharmacy and protected by copyright. You may not reproduce or distribute without permission.",
       },
     ],
   },
@@ -853,11 +853,11 @@ export const TERMS_AND_CONDITIONS = [
     beforeText:
       "If you have questions about these Terms and Conditions, please contact us:",
     contactInfo: {
-      name: "Kidbrooke Pharmacy (MECKAY LIMITED)",
+      name: "Lowfield Pharmacy (MECKAY LIMITED)",
       address1: "Oakhurst, St Pauls Wood Hill",
       address2: "Orpington, Kent BR5 2SR",
       phone: "+44 (0) 1234 567890",
-      email: "info@kidbrookepharmacy.com",
+      email: "info@lowfieldpharmacy.com",
     },
   },
 ];

@@ -43,30 +43,30 @@ import cb3 from "@/public/ui/cb3.jpg";
 export const EXTERNAL_LINKS = {
   services: {
     stopSmokingServices:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5337",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5337",
 
     bloodPressureChecks:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5336",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5336",
     fluVaccinations:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5335",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5335",
     emergencyContraception:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5338",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5338",
     covidVaccination:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5334",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5334",
     earPain:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5332",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5332",
     infectedInsectBites:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5333",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5333",
     sinusInfection:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5327",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5327",
     urinaryTractInfection:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5329",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5329",
     bacterialSkinInfection:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5331",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5331",
     shingles:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5330",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5330",
     soreThroatConsultations:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5328",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5328",
   },
   socials: {
     facebook: "",
@@ -75,17 +75,17 @@ export const EXTERNAL_LINKS = {
     linkedIn: "",
     whatsapp: "https://wa.me/+44(0)1234567890",
     phone: "tel:+44(0)1234567890",
-    email: "mailto:info@kidbrookepharmacy.com",
+    email: "mailto:info@lowfieldpharmacy.com",
   },
   actions: {
     bookAppointment:
-      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377",
-    orderPrescriptions: "https://app.kidbrookepharmacy.com/#/auth/signin",
+      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377",
+    orderPrescriptions: "https://app.lowfieldpharmacy.com/#/auth/signin",
   },
   appStore: {
-    ios: "https://apps.apple.com/us/app/kidbrooke-pharmacy/id6670598559",
+    ios: "https://apps.apple.com/us/app/lowfield-pharmacy/id6670598559",
     android:
-      "https://play.google.com/store/apps/details?id=com.kidbrookepharmacy.app",
+      "https://play.google.com/store/apps/details?id=com.lowfieldpharmacy.app",
   },
 };
 
@@ -101,14 +101,14 @@ export const INTERNAL_LINKS = {
 };
 
 export const BUSINESS_PROFILE = {
-  name: "Kidbrooke Pharmacy",
+  name: "Lowfield Pharmacy",
   propertyName: "OAKHURST",
   streetName: "ST PAULS WOOD HILL",
   region: "Orpington, Kent",
   postCode: "BR5 2SR",
   openingHours: "Mon-Fri: 9am-6:30pm, Sat: 9am-2pm",
   phone: "+44 (0) 1234 567890",
-  email: "info@kidbrookepharmacy.com",
+  email: "info@lowfieldpharmacy.com",
 };
 
 export const MENU_LINKS = [
@@ -523,7 +523,7 @@ export const WHY_CHOOSE_US_SERVICES = [
 
 export const CTA_SECTION_FEATURES_LIST = [
   "Same-day prescription fulfillment",
-  "Free medication delivery in Kidbrooke",
+  "Free medication delivery in Lowfield",
   "Private consultation rooms",
   "No-appointment health checks",
   "Emergency on-call service",
