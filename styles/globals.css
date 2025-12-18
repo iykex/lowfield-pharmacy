@@ -67,7 +67,7 @@
   --card-foreground: #184363;
   --popover: #ffffff;
   --popover-foreground: #184363;
-  --primary: #15a9e3;
+  --primary: #077ba8;
   --primary-foreground: #ffffff;
   --secondary: #f4f5f8;
   --secondary-foreground: #184363;
@@ -486,7 +486,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%2315a9e3' stroke-width='1.5' opacity='0.15'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%230d1f2d' stroke-width='1.5' opacity='0.15'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
   background-size: 60px 60px;
   mask-image: radial-gradient(
     ellipse 80% 80% at 100% 0%,
@@ -506,5 +506,5 @@
 /* Dark mode background pattern adjustment */
 .dark .dashed-grid-bg::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%2315a9e3' stroke-width='1.5' opacity='0.2'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.3;
+  opacity: 0.5;
 }

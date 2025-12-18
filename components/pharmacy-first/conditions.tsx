@@ -31,7 +31,7 @@ export const ConditionsSection = () => {
               key={index}
               className="group bg-card rounded-3xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20 flex flex-col h-full max-w-md relative"
             >
-              <Badge className="absolute top-4 right-4 z-20 bg-accent-foreground dark:bg-background/60 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+              <Badge className="absolute top-4 right-4 z-20 bg-primary/50 dark:bg-background/60 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-lg">
                 {condition.badge}
               </Badge>
               <div className="relative h-54 overflow-hidden">

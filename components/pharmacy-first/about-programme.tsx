@@ -29,7 +29,7 @@ export const AboutSection = () => {
                 key={index}
                 className="flex flex-col items-center text-center p-4 rounded-lg bg-card shadow-sm dark:shadow-md/30 border border-border transition-all duration-300 hover:shadow-md hover:border-primary/20 group z-10"
               >
-                <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-accent group-hover:bg-ring transition-colors duration-300">
+                <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-card group-hover:bg-ring transition-colors duration-300">
                   <Icon className="size-6 text-ring group-hover:text-white" />
                 </div>
                 <h3 className="font-bold mb-2 text-foreground">
