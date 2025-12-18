@@ -10,7 +10,6 @@ import covidVaccineImage from "@/public/services/covid-vaccine.jpg";
 import pressureCheckImage from "@/public/services/pressure-check.jpg";
 import stopSmokingImage from "@/public/services/stop-smoking.jpg";
 import emergencyContraceptionImage from "@/public/services/emergency-contraception.jpg";
-import yomsterAImage from "@/public/testimonials/yomster.png";
 import {
   Award as IconAward,
   Zap as IconBolt,
@@ -27,96 +26,96 @@ import {
 } from "lucide-react";
 import { EXTERNAL_LINKS } from "@/lib/constants/general";
 import { TRACKING_EVENTS } from "./analytics";
-import carolynWatkinsImage from "@/public/testimonials/carolynWatkins.png";
-import mariaKEImage from "@/public/testimonials/mariaKE.png";
-import danielleMarcroftImage from "@/public/testimonials/danielleMarcroft.png";
-import lauraAndrusImage from "@/public/testimonials/lauraAndrus.png";
-import callyMarleyImage from "@/public/testimonials/callyMarley.png";
-import anonymousImage from "@/public/testimonials/anonymous.png";
-import alisonGravesImage from "@/public/testimonials/alisonGraves.png";
-import normaFergusonImage from "@/public/testimonials/normaFerguson.png";
-import williamJohncockImage from "@/public/testimonials/williamJohncock.png";
+import garyHarrisImage from "@/public/testimonials/garyHarris.png";
+import jKirkImage from "@/public/testimonials/jKirk.png";
+import roseReedImage from "@/public/testimonials/roseReed.png";
+import hannahDaviesImage from "@/public/testimonials/hannahDavies.png";
+import chloeLImage from "@/public/testimonials/chloeL.png";
+import traceySharmanImage from "@/public/testimonials/traceySharman.png";
+import hannahMaryDarcyImage from "@/public/testimonials/hannahMaryDarcy.png";
+import nickiJanesImage from "@/public/testimonials/nickiJanes.png";
+import katieKnightConeyImage from "@/public/testimonials/katieKnightConey.png";
+import angelaKesselImage from "@/public/testimonials/angelaKessel.png";
 
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Yomster A",
-    role: "Local Guide",
-    image: yomsterAImage,
+    name: "Tracey Sharman",
+    role: "Customer",
+    image: traceySharmanImage,
     content:
-      "Very friendly and helpful staff with excellent customer service. The pharmacists give good advice on medication and prices are very reasonable.",
+      "The staff are incredibly helpful and always keep me informed. Their service is first class and genuinely caring.",
   },
   {
     id: 2,
-    name: "Carolyn Watkins",
-    role: "Customer",
-    image: carolynWatkinsImage,
+    name: "Hannah-Mary Darcy",
+    role: "Local Guide",
+    image: hannahMaryDarcyImage,
     content:
-      "A brilliant local pharmacy, well run, polite and helpful, with a well-stocked shop.",
+      "Amazing support with my ADHD medication during a shortage. Kindness and dedication like this really makes a difference.",
   },
   {
     id: 3,
-    name: "Maria K-E",
-    role: "Customer",
-    image: mariaKEImage,
+    name: "Angela Kessel",
+    role: "Local Guide",
+    image: angelaKesselImage,
     content:
-      "Exceptional service. Even though I’m not a local customer, they promptly helped me with a prescription I couldn’t find anywhere else.",
+      "The best pharmacy by miles. The staff are amazing and incredibly helpful.",
   },
   {
     id: 4,
-    name: "Danielle Marcroft",
+    name: "Gary Harris",
     role: "Customer",
-    image: danielleMarcroftImage,
+    image: garyHarrisImage,
     content:
-      "They always go above and beyond for their customers, keeping us informed and even sourcing items from other chemists when needed.",
+      "Always polite and helpful. The pharmacist takes time to discuss issues when asked, which is very reassuring.",
   },
   {
     id: 5,
-    name: "Laura Andrus",
-    role: "Customer",
-    image: lauraAndrusImage,
+    name: "J Kirk",
+    role: "Local Guide",
+    image: jKirkImage,
     content:
-      "Wonderful, helpful staff. I’ve been using this pharmacy for over 20 years without any complaints.",
+      "Lovely, friendly staff who go out of their way to help. I can’t fault anything here — kindness really goes both ways.",
   },
   {
     id: 6,
-    name: "Cally Marley",
+    name: "Rose Reed",
     role: "Customer",
-    image: callyMarleyImage,
-    content:
-      "I’ve never been treated so well in any pharmacy. Michael, the owner, is one of the kindest and most caring pharmacists I’ve ever met.",
+    image: roseReedImage,
+    content: "Always really helpful. I wouldn’t go anywhere else.",
   },
   {
     id: 7,
-    name: "Anonymous Reviewer",
+    name: "Hannah Davies",
     role: "Customer",
-    image: anonymousImage,
+    image: hannahDaviesImage,
     content:
-      "I’ve been using this pharmacy for years. Great customer service — they remember my name and give excellent medical advice.",
+      "Friendly, helpful staff who actually care. By far better than other pharmacies I’ve used — professional and approachable.",
   },
   {
     id: 8,
-    name: "Alison Graves",
+    name: "Chloe L",
     role: "Local Guide",
-    image: alisonGravesImage,
+    image: chloeLImage,
     content:
-      "The owner and team are incredibly caring, reassuring and encouraging. I couldn’t ask for better service.",
+      "I was in a panic close to closing time and they went above and beyond to help me collect my mum’s prescription. Truly grateful.",
   },
   {
     id: 9,
-    name: "Norma Ferguson",
-    role: "Local Guide",
-    image: normaFergusonImage,
+    name: "Nicki Janes",
+    role: "Customer",
+    image: nickiJanesImage,
     content:
-      "The staff are always polite, helpful and professional. They genuinely care about my health and I’ve never been disappointed.",
+      "Very understanding and caring. The pharmacist is always willing to discuss changes and ensure the best care for my mum.",
   },
   {
     id: 10,
-    name: "William Johncock",
-    role: "Local Guide",
-    image: williamJohncockImage,
+    name: "Katie Knight-Coney",
+    role: "Customer",
+    image: katieKnightConeyImage,
     content:
-      "Polite staff who were able to get medication my usual chemist could not.",
+      "They helped me get medication after every other chemist failed. Cheerful, helpful, and made a difficult situation easier.",
   },
 ];
 
