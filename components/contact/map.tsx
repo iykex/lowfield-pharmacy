@@ -19,7 +19,7 @@ export default function Map() {
 
         <div className="rounded-2xl overflow-hidden aspect-video max-w-6xl mx-auto">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.054856983346!2d0.02590667701023844!3d51.4673620136271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9b6a9328445%3A0x8b58179702b5f241!2sLowfield%20Pharmacy%20-%20Travel%20Clinic%20%26%20Weight%20Loss%20Clinic!5e1!3m2!1sen!2sgh!4v1765997872967!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.30384878113!2d0.2158301!3d51.44215179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b1921179eccb%3A0xcc3a687003e9feee!2sLowfield%20Pharmacy%20-%20Travel%20Clinic%20%26%20Weight%20Loss%20Clinic!5e1!3m2!1sen!2sgh!4v1766055485379!5m2!1sen!2sgh"
             width="800"
             height="600"
             style={{ border: 0 }}

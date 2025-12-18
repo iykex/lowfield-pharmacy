@@ -43,49 +43,49 @@ import cb3 from "@/public/ui/cb3.jpg";
 export const EXTERNAL_LINKS = {
   services: {
     stopSmokingServices:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5337",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5337",
 
     bloodPressureChecks:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5336",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5336",
     fluVaccinations:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5335",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5335",
     emergencyContraception:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5338",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5338",
     covidVaccination:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5334",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5334",
     earPain:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5332",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5332",
     infectedInsectBites:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5333",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5333",
     sinusInfection:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5327",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5327",
     urinaryTractInfection:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5329",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5329",
     bacterialSkinInfection:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5331",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5331",
     shingles:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5330",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5330",
     soreThroatConsultations:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5328",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377&serviceId=5328",
   },
   socials: {
     facebook: "",
     x: "",
     instagram: "",
     linkedIn: "",
-    whatsapp: "https://wa.me/+44(0)1234567890",
-    phone: "tel:+44(0)1234567890",
+    whatsapp: "https://wa.me/+44(0)1322220779",
+    phone: "tel:+44(0)1322220779",
     email: "mailto:info@lowfieldpharmacy.com",
   },
   actions: {
     bookAppointment:
-      "https://app.lowfieldpharmacy.com/#/guest/appointments?pharmacyId=377",
-    orderPrescriptions: "https://app.lowfieldpharmacy.com/#/auth/signin",
+      "https://app.kidbrookepharmacy.com/#/guest/appointments?pharmacyId=377",
+    orderPrescriptions: "https://app.kidbrookepharmacy.com/#/auth/signin",
   },
   appStore: {
-    ios: "https://apps.apple.com/us/app/lowfield-pharmacy/id6670598559",
+    ios: "https://apps.apple.com/us/app/kidbrooke-pharmacy/id6670598559",
     android:
-      "https://play.google.com/store/apps/details?id=com.lowfieldpharmacy.app",
+      "https://play.google.com/store/apps/details?id=com.kidbrookepharmacy.app",
   },
 };
 
@@ -102,12 +102,12 @@ export const INTERNAL_LINKS = {
 
 export const BUSINESS_PROFILE = {
   name: "Lowfield Pharmacy",
-  propertyName: "OAKHURST",
-  streetName: "ST PAULS WOOD HILL",
-  region: "Orpington, Kent",
-  postCode: "BR5 2SR",
+  propertyName: "63",
+  streetName: "Lowfield Street",
+  region: "Dartford, Kent",
+  postCode: "DA1 1HP",
   openingHours: "Mon-Fri: 9am-6:30pm, Sat: 9am-2pm",
-  phone: "+44 (0) 1234 567890",
+  phone: "+44 (0) 1322 220779",
   email: "info@lowfieldpharmacy.com",
 };
 
