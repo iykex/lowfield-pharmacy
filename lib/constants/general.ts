@@ -874,7 +874,6 @@ export const ABOUT_CONTACT_INFO = [
 
 export const DARK_HERO_PAGES = [
   INTERNAL_LINKS.homePage,
-  INTERNAL_LINKS.aboutPage,
   INTERNAL_LINKS.contactPage,
 ];
 

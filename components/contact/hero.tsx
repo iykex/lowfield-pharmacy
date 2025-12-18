@@ -2,7 +2,7 @@ import { Mail, MessageCircle } from "lucide-react";
 import WidthConstraint from "../shared/width-constraint";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
-import contactUs from "@/public/ui/contact-us.png";
+import contactUs from "@/public/ui/contact-us.jpg";
 import Link from "next/link";
 import { BUSINESS_PROFILE, EXTERNAL_LINKS } from "@/lib/constants/general";
 
