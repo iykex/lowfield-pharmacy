@@ -16,7 +16,7 @@ export default function Testimonials() {
   const currentTestimonial = TESTIMONIALS[currentIndex];
 
   return (
-    <section className="py-20 bg-gray-900 dark:bg-[#071a11] relative overflow-hidden">
+    <section className="py-20 bg-gray-900 dark:bg-card/40  relative overflow-hidden">
       {/* Background Pattern */}
       <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
       <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />

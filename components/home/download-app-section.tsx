@@ -47,7 +47,7 @@ export default function DownloadAppSection() {
                 return (
                   <div
                     key={item.description}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-card hover:bg-gray-100 dark:hover:bg-[#007351] transition-all duration-300 border border-border group hover:-translate-y-1 z-10"
+                    className="flex items-start gap-4 p-4 rounded-xl bg-card hover:bg-gray-100 dark:hover:bg-card/50 transition-all duration-300 border border-border group hover:-translate-y-1 z-10"
                   >
                     <div className="p-2.5 bg-primary/10 dark:bg-primary/20 rounded-lg shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="size-5 text-primary" />

@@ -36,8 +36,8 @@ import { ContactFormFieldsMap } from "../types/general";
 import appStore from "@/public/ui/app-store.png";
 import playStore from "@/public/ui/play-store.png";
 import { TRACKING_EVENTS } from "./analytics";
-import cb1 from "@/public/ui/cb1.jpg";
-import cb2 from "@/public/ui/cb2.jpg";
+import cb1 from "@/public/ui/cb1.png";
+import cb2 from "@/public/ui/cb2.png";
 import cb3 from "@/public/ui/cb3.jpg";
 
 export const EXTERNAL_LINKS = {

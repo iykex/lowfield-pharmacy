@@ -5,7 +5,10 @@ import { ArrowRight, BadgeCheckIcon, Download } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { LANDING_PAGE_ACTION_BUTTONS, APP_STORES } from "@/lib/constants/general";
+import {
+  LANDING_PAGE_ACTION_BUTTONS,
+  APP_STORES,
+} from "@/lib/constants/general";
 import { track } from "@/lib/analytics/tracker";
 import { BackgroundCarousel } from "../home/hero-carousel";
 import curvedArrow from "@/public/elements/curved-arrow.svg";
@@ -15,13 +18,13 @@ export default function Banner() {
     <section className="h-screen overflow-hidden relative">
       <BackgroundCarousel />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#0a1f19]/90 via-[#0a1f19]/75 to-[#0a1f19]/20 dark:from-[#0a1f19]/95 dark:via-[#0a1f19]/80 dark:to-[#0a1f19]/30" />
+      <div className="absolute inset-0 bg-linear-to-r from-[#0d1f2d]/90 via-[#0d1f2d]/75 to-[#0d1f2d]/20 dark:from-[#0d1f2d]/95 dark:via-[#0d1f2d]/85 dark:to-[#0d1f2d]/40" />
       {/* Content */}
       <div className="relative w-full h-full flex items-center">
         <WidthConstraint>
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content - Takes 3 columns */}
-            <div className="lg:col-span-3 space-y-8">
+            <div className="lg:col-span-3 space-y-8 relative">
               <Badge
                 variant="secondary"
                 className="py-1.5 px-4 text-sm font-bold bg-blue-500 text-white border border-[#00BFFF]/20 backdrop-blur-sm"
@@ -86,7 +89,7 @@ export default function Banner() {
 
                   <div className="space-y-5">
                     <div className="space-y-2">
-                      <p className="text-green-700 font-medium text-xs uppercase tracking-wider">
+                      <p className="text-primary font-medium text-xs uppercase tracking-wider">
                         Mobile App
                       </p>
                       <h3 className="text-xl font-bold text-white">
