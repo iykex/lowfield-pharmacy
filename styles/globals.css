@@ -60,46 +60,47 @@
 
 :root {
   --radius: 0.75rem;
+  /* Sky Blue Professional - Light Theme */
   --background: #ffffff;
-  --foreground: #0d3b2e;
+  --foreground: #184363;
   --card: #ffffff;
-  --card-foreground: #0d3b2e;
+  --card-foreground: #184363;
   --popover: #ffffff;
-  --popover-foreground: #0d3b2e;
-  --primary: #266c2a;
+  --popover-foreground: #184363;
+  --primary: #15a9e3;
   --primary-foreground: #ffffff;
-  --secondary: #f1f8f4;
-  --secondary-foreground: #0d3b2e;
+  --secondary: #f4f5f8;
+  --secondary-foreground: #184363;
   --destructive: #d32f2f;
   --destructive-foreground: #ffffff;
-  --muted: #e8f5e9;
-  --muted-foreground: #4a7c59;
-  --accent: #f1f8f4;
-  --accent-foreground: #0d3b2e;
-  --border: #d4e8e0;
-  --input: #d4e8e0;
-  --ring: #2e7d32;
-  --chart-1: #2e7d32;
-  --chart-2: #66bb6a;
-  --chart-3: #43a047;
-  --chart-4: #81c784;
-  --chart-5: #0d3b2e;
-  --accent-green: #4caf50;
-  --accent-green-dark: #1b5e20;
-  --accent-mint: #c8e6c9;
-  --accent-mint-dark: #388e3c;
-  --accent-sage: #a5d6a7;
-  --accent-sage-dark: #2e7d32;
-  --accent-lime: #dcedc8;
-  --accent-lime-dark: #689f38;
-  --sidebar: #f1f8f4;
-  --sidebar-foreground: #0d3b2e;
-  --sidebar-primary: #0d3b2e;
+  --muted: #a8e0f5;
+  --muted-foreground: #56778f;
+  --accent: #f2971f;
+  --accent-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #15a9e3;
+  --chart-1: #15a9e3;
+  --chart-2: #39cb74;
+  --chart-3: #f2971f;
+  --chart-4: #a8e0f5;
+  --chart-5: #56778f;
+  --accent-sky: #a8e0f5;
+  --accent-sky-dark: #0891b2;
+  --accent-blue: #15a9e3;
+  --accent-blue-dark: #0284c7;
+  --accent-orange: #f2971f;
+  --accent-orange-dark: #ea580c;
+  --accent-green: #39cb74;
+  --accent-green-dark: #16a34a;
+  --sidebar: #f4f5f8;
+  --sidebar-foreground: #184363;
+  --sidebar-primary: #15a9e3;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #ffffff;
-  --sidebar-accent-foreground: #0d3b2e;
-  --sidebar-border: #d4e8e0;
-  --sidebar-ring: #2e7d32;
+  --sidebar-accent-foreground: #184363;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #15a9e3;
   --text-base: clamp(0.8125rem, 0.21vw + 0.77rem, 0.9375rem);
   --text-sm: clamp(0.6875rem, 0.16vw + 0.65rem, 0.78125rem);
   --text-h1: clamp(1.75rem, 4.5vw + 1rem, 2.5rem);
@@ -110,37 +111,39 @@
 }
 
 .dark {
-  --background: #03130b;
-  --foreground: #e8f5e9;
-  --card: #1b3a2f;
-  --card-foreground: #e8f5e9;
-  --popover: #1b3a2f;
-  --popover-foreground: #e8f5e9;
-  --primary: #41ab44;
+  /* Midnight Ocean - Dark Theme */
+  --background: #0d1f2d;
+  --foreground: #e8f4fa;
+  --card: #1a3a4f;
+  --card-foreground: #e8f4fa;
+  --popover: #1a3a4f;
+  --popover-foreground: #e8f4fa;
+  --primary: #15a9e3;
   --primary-foreground: #ffffff;
-  --secondary: #2d5245;
-  --secondary-foreground: #e8f5e9;
-  --muted: #2d5245;
-  --muted-foreground: #a5d6a7;
-  --accent: #2d5245;
-  --accent-foreground: #e8f5e9;
+  --secondary: #2c4a5e;
+  --secondary-foreground: #e8f4fa;
+  --muted: #2c4a5e;
+  --muted-foreground: #a8cade;
+  --accent: #f2971f;
+  --accent-foreground: #ffffff;
   --destructive: #ef5350;
-  --border: #2d5245;
-  --input: #2d5245;
-  --ring: #4caf50;
-  --chart-1: #4caf50;
-  --chart-2: #81c784;
-  --chart-3: #a5d6a7;
-  --chart-4: #c8e6c9;
-  --chart-5: #e8f5e9;
-  --sidebar: #0f2b21;
-  --sidebar-foreground: #e8f5e9;
-  --sidebar-primary: #4caf50;
+  --destructive-foreground: #ffffff;
+  --border: #2c4a5e;
+  --input: #2c4a5e;
+  --ring: #15a9e3;
+  --chart-1: #15a9e3;
+  --chart-2: #39cb74;
+  --chart-3: #f2971f;
+  --chart-4: #a8cade;
+  --chart-5: #e8f4fa;
+  --sidebar: #122838;
+  --sidebar-foreground: #e8f4fa;
+  --sidebar-primary: #15a9e3;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #1b3a2f;
-  --sidebar-accent-foreground: #e8f5e9;
-  --sidebar-border: #2d5245;
-  --sidebar-ring: #4caf50;
+  --sidebar-accent: #1a3a4f;
+  --sidebar-accent-foreground: #e8f4fa;
+  --sidebar-border: #2c4a5e;
+  --sidebar-ring: #15a9e3;
 }
 
 @layer base {
@@ -483,7 +486,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%234a7c59' stroke-width='1.5' opacity='0.2'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%2315a9e3' stroke-width='1.5' opacity='0.15'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
   background-size: 60px 60px;
   mask-image: radial-gradient(
     ellipse 80% 80% at 100% 0%,
@@ -498,4 +501,10 @@
   height: 100%;
   width: 100%;
   opacity: 0.5;
+}
+
+/* Dark mode background pattern adjustment */
+.dark .dashed-grid-bg::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%2315a9e3' stroke-width='1.5' opacity='0.2'%3E%3Crect x='10' y='10' width='20' height='8' rx='4' transform='rotate(-30 20 14)' /%3E%3Cpath d='M17 19 L23 9' /%3E%3Ccircle cx='55' cy='15' r='6' /%3E%3Cpath d='M49 15 L61 15' /%3E%3Crect x='15' y='45' width='16' height='6' transform='rotate(45 23 48)' /%3E%3Cline x1='11' y1='57' x2='15' y2='53' /%3E%3Cline x1='31' y1='37' x2='35' y2='33' /%3E%3Cpath d='M60 45 h-5 v-5 h-5 v5 h-5 v5 h5 v5 h5 v-5 h5 z' /%3E%3Cpath d='M35 65 l5 -5 l5 15 l5 -10 l5 5' /%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
 }
