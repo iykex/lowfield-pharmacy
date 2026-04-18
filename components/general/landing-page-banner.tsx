@@ -77,7 +77,7 @@ export default function Banner() {
                       asChild
                       className={
                         btn.variant === "primary"
-                          ? "group bg-[#F9A825] text-white hover:bg-[#F9A825]/90 transition-all duration-300 shadow-lg hover:shadow-[#F9A825]/25 px-8 py-6 text-base font-semibold"
+                          ? "group bg-[#F9A825] text-black hover:bg-[#F9A825]/90 transition-all duration-300 shadow-lg hover:shadow-[#F9A825]/25 px-8 py-6 text-base font-semibold"
                           : "group border-white/20 bg-white/5 text-white hover:bg-white hover:text-primary backdrop-blur-sm px-8 py-6 text-base font-semibold transition-all duration-300"
                       }
                     >
@@ -88,7 +88,7 @@ export default function Banner() {
                         href={btn.href}
                         className="flex items-center gap-2"
                       >
-                        {btn.text}
+                        {btn.text.toUpperCase()}
                         {btn.icon && (
                           <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
                         )}
