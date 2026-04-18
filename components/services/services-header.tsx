@@ -3,7 +3,8 @@ import Image from "next/image";
 import WidthConstraint from "../shared/width-constraint";
 import { Button } from "../ui/button";
 import { ArrowRight, Calendar, CheckCircle, Video } from "lucide-react";
-import elderlyCouple from "@/public/ui/elderly-couple.jpg";
+import bookingCouple from "@/public/ui/booking.png";
+import curvedArrow from "@/public/elements/curved-arrow.svg";
 import Link from "next/link";
 import { TRACKING_EVENTS } from "@/lib/constants/general";
 import { track } from "@/lib/analytics/tracker";
@@ -13,9 +14,9 @@ import { PrimaryCtaSkeleton } from "@/components/shared/tenant-skeletons";
 export function ServicesHeading() {
   const { tenant, isTenantReady } = useTenantContext();
   return (
-    <section className="pt-45 pb-20 bg-background">
+    <section className="pt-32 pb-20 bg-background">
       <WidthConstraint className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 place-items-center">
           {/* LEFT COL - Content */}
           <div className="space-y-6 max-w-xl">
             {/* Badge */}
@@ -33,10 +34,10 @@ export function ServicesHeading() {
 
             {/* Description */}
             <p className="text-gray-600 dark:text-white/60 text-lg leading-relaxed">
-              At Belvedere Pharmacy, our pharmacists offer a comprehensive range
-              of NHS-commissioned and private healthcare services. Get expert
-              help from the comfort of your home with our video consultation
-              service.
+              At {tenant?.displayName ?? "Lowfield Pharmacy"}, our pharmacists
+              offer a comprehensive range of NHS-commissioned and private
+              healthcare services. Get expert help from the comfort of your home
+              with our video consultation service.
             </p>
 
             {/* Feature Pills */}
@@ -56,7 +57,7 @@ export function ServicesHeading() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-2">
+            <div className="pt-2 space-y-4">
               {!isTenantReady || !tenant ? (
                 <PrimaryCtaSkeleton className="!w-64 !h-12" />
               ) : (
@@ -81,23 +82,20 @@ export function ServicesHeading() {
                   </Link>
                 </Button>
               )}
+              <Image src={curvedArrow} alt="" width={100} height={100} />
             </div>
           </div>
 
-          {/* RIGHT COL - Image */}
-          <div className="hidden lg:block relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src={elderlyCouple}
-                alt="Healthcare Services"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                placeholder="blur"
-              />
-            </div>
-          </div>
+          {/* RIGHT COL - Image (pre-merge: booking.png, visible all breakpoints) */}
+          <Image
+            src={bookingCouple}
+            alt="Healthcare services at the pharmacy"
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            placeholder="blur"
+          />
         </div>
       </WidthConstraint>
     </section>

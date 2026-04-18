@@ -12,6 +12,8 @@ import {
   CtaContactCardSkeleton,
   CtaTenantBlockSkeleton,
 } from "@/components/shared/tenant-skeletons";
+import Image from "next/image";
+import pattern from "@/public/elements/pattern-3.svg";
 
 export default function CTASection() {
   const { tenant, isTenantReady } = useTenantContext();
@@ -21,11 +23,15 @@ export default function CTASection() {
   if (!isTenantReady || !tenant) {
     return (
       <section className="overflow-hidden">
-        <WidthConstraint className="relative p-6 md:p-20 bg-[#002f4b] rounded-2xl">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[40px_40px]" />
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <WidthConstraint className="relative p-6 md:p-20 bg-foreground dark:bg-background rounded-2xl overflow-hidden">
+          <Image
+            src={pattern}
+            alt=""
+            className="absolute inset-0 bg-cover bg-center w-full opacity-50 pointer-events-none"
+          />
+          <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
             <CtaTenantBlockSkeleton />
-            <div className="bg-white dark:bg-[#03456a] rounded-2xl p-4 sm:p-8 shadow-2xl z-10">
+            <div className="bg-card rounded-2xl p-4 sm:p-8 shadow-2xl">
               <CtaContactCardSkeleton />
             </div>
           </div>
@@ -97,9 +103,13 @@ export default function CTASection() {
 
   return (
     <section className="overflow-hidden">
-      <WidthConstraint className="relative p-6 md:p-20 bg-[#002f4b] rounded-2xl">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[40px_40px]" />
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <WidthConstraint className="relative p-6 md:p-20 bg-foreground dark:bg-background rounded-2xl overflow-hidden">
+        <Image
+          src={pattern}
+          alt=""
+          className="absolute inset-0 bg-cover bg-center w-full opacity-50 pointer-events-none"
+        />
+        <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           {/* Left Column - Content */}
           <div className="text-white space-y-8">
             <div>
@@ -161,7 +171,7 @@ export default function CTASection() {
           </div>
 
           {/* Right Column - Contact Card */}
-          <div className="bg-white dark:bg-[#03456a] rounded-2xl p-4 sm:p-8 shadow-2xl z-10">
+          <div className="bg-card rounded-2xl p-4 sm:p-8 shadow-2xl">
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                 Get In Touch

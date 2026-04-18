@@ -43,7 +43,7 @@ export const ConditionsSection = () => {
           {conditions.map((condition) => (
             <div
               key={condition.serviceId}
-              className="group bg-white dark:bg-[#003b5c] rounded-3xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20 flex flex-col h-full max-w-md relative"
+              className="group bg-card rounded-3xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20 flex flex-col h-full max-w-md relative border border-border"
             >
               <Badge className="absolute top-4 right-4 z-20 bg-[#005EB8] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                 {condition.badge}

@@ -22,25 +22,17 @@ export default async function Banner() {
 
   const heroStats = marketing?.aboutHeroStats ?? [];
   const heroBadges = marketing?.aboutHeroBadges ?? [];
+  const pharmacyFirstWord =
+    tenant?.displayName?.split(" ")[0] ?? "Lowfield";
+  const day = new Date().getDay();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-linear-to-br from-[#012337] via-[#033046] to-[#001924]  dark:bg-linear-to-br dark:from-[#000b16] dark:via-[#001528] dark:to-[#00101f] ">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />
-
-      {/* Subtle grid pattern */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
-
-      <WidthConstraint className="relative z-10  mt-34 sm:mt-[5%]">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[url('/elements/pattern-2.svg')] bg-cover bg-center">
+      <div className="absolute inset-0" />
+      <WidthConstraint className="relative z-10 mt-34 sm:mt-[5%]">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 bg-background">
             <div className="flex flex-wrap gap-3">
               {heroBadges.map((badge, index) => {
                 const style = ABOUT_HERO_BADGE_STYLES[index % ABOUT_HERO_BADGE_STYLES.length]!;
@@ -58,10 +50,10 @@ export default async function Banner() {
             </div>
 
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
                 About{" "}
                 <span className="text-primary relative inline-block">
-                  Belvedere
+                  {pharmacyFirstWord}
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
                     viewBox="0 0 200 8"
@@ -76,10 +68,10 @@ export default async function Banner() {
                   </svg>
                 </span>
                 <br />
-                <span className="text-white/90">Pharmacy</span>
+                <span className="text-foreground/90">Pharmacy</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-white/70 leading-relaxed max-w-xl">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl">
                 Providing accessible healthcare and personalized service to our
                 community with a commitment to excellence and compassion.
               </p>
@@ -98,7 +90,7 @@ export default async function Banner() {
                     className={
                       isPrimary
                         ? "group bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 rounded-xl shadow-lg shadow-primary/30 transition-all duration-300 hover:scale-95"
-                        : "bg-white/10 border-white/20 text-white hover:bg-white hover:text-[#002f4b] backdrop-blur-sm px-8 py-6 rounded-xl font-semibold transition-all duration-300"
+                        : "hover:bg-white hover:-translate-y-1 backdrop-blur-sm px-8 py-6 rounded-xl font-semibold transition-all duration-300"
                     }
                   >
                     <Link href={btn.href} className="flex items-center gap-2">
@@ -115,11 +107,11 @@ export default async function Banner() {
             {/* Contact Info Row */}
             {tenant && (
               <div className="flex flex-wrap gap-6 pt-4">
-                <div className="flex items-center gap-2 text-white/70">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="size-4 text-primary" />
                   <span className="text-sm">{formatAddressInline(tenant)}</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/70">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="size-4 text-primary" />
                   <span className="text-sm">{tenant.phone}</span>
                 </div>
@@ -127,65 +119,74 @@ export default async function Banner() {
             )}
           </div>
 
-          {/* Right Side - Visual Card */}
+          {/* Right Side — pre-merge tilted insight card */}
           <div className="hidden lg:block pb-10">
-            <div className="relative">
-              {/* Main Card */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 space-y-6">
-                {/* Pharmacy Image/Logo */}
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/logo/lowfield-logo.png"
-                    alt="Belvedere Pharmacy"
-                    width={64}
-                    height={64}
-                    className="rounded-xl"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold text-white">
-                      {tenant?.displayName ?? "Belvedere Pharmacy"}
-                    </h3>
-                    <p className="text-white/60 text-sm">
-                      Your Local Healthcare Partner
-                    </p>
+            <div className="relative py-12">
+              <div className="relative overflow-hidden border border-border rounded-3xl p-8 shadow-xl bg-card dark:bg-background/90 max-w-xl -rotate-10 mx-auto">
+                <div className="relative flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-4">
+                    <Image
+                      src="/logo/lowfield-logo.png"
+                      alt="Lowfield Pharmacy"
+                      width={56}
+                      height={56}
+                      className="rounded-xl shadow-sm"
+                    />
+                    <div>
+                      <h3 className="text-lg font-bold text-foreground">
+                        {tenant?.displayName ?? "Lowfield Pharmacy"}
+                      </h3>
+                      <div className="flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <p className="text-xs text-muted-foreground font-medium">
+                          {day !== 0 && day !== 6
+                            ? " Open today until 6:30pm"
+                            : day === 6
+                              ? "Open today until 2:00pm"
+                              : "Closed for today"}
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                  <Badge className="font-medium px-2 py-1 rounded-md border-0 bg-cyan-600/70 text-white">
+                    NHS ACCREDITED
+                  </Badge>
                 </div>
 
-                {/* Stats */}
-                <div className="space-y-3">
+                <div className="space-y-3 relative z-10">
                   {heroStats.map((stat, index) => {
-                    const Icon = ABOUT_HERO_STAT_ICONS[index % ABOUT_HERO_STAT_ICONS.length]!;
+                    const Icon =
+                      ABOUT_HERO_STAT_ICONS[index % ABOUT_HERO_STAT_ICONS.length]!;
                     return (
                       <div
                         key={index}
-                        className="flex items-center gap-4 bg-white/5 rounded-xl p-4 hover:bg-white/10 transition-colors"
+                        className="flex items-center justify-between bg-card backdrop-blur-lg p-3 rounded-xl shadow-md transition-all duration-300 ease-in-out hover:-translate-y-1 border border-border"
                       >
-                        <div className="p-3 bg-primary/20 rounded-lg">
-                          <Icon className="size-5 text-primary" />
-                        </div>
-                        <div>
-                          <p className="text-2xl font-bold text-white">
-                            {stat.value}
+                        <div className="flex items-center gap-3">
+                          <div className="p-2.5 bg-primary/80 text-white rounded-lg">
+                            <Icon className="size-5" />
+                          </div>
+                          <p className="text-sm font-medium text-muted-foreground">
+                            {stat.label}
                           </p>
-                          <p className="text-white/60 text-sm">{stat.label}</p>
                         </div>
+                        <p className="text-xl font-medium text-foreground">
+                          {stat.value}
+                        </p>
                       </div>
                     );
                   })}
                 </div>
 
-                {/* Mission Statement */}
-                <div className="pt-4 border-t border-white/10">
-                  <p className="text-white/70 text-sm italic leading-relaxed">
-                    &quot;Our mission is to provide accessible, compassionate
-                    healthcare to every member of our community.&quot;
+                <div className="mt-8 pt-6 border-t border-border text-center">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <span className="text-emerald-600 font-bold mr-1">
+                      Our Mission:
+                    </span>
+                    To provide accessible, compassionate healthcare to every
+                    member of our community.
                   </p>
                 </div>
-              </div>
-
-              {/* Floating Badge */}
-              <div className="absolute top-11 right-10 bg-primary text-white px-4 py-2 rounded-xl shadow-lg shadow-primary/30">
-                <p className="text-sm font-semibold">NHS Accredited</p>
               </div>
             </div>
           </div>
@@ -198,11 +199,11 @@ export default async function Banner() {
             return (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center"
+                className="bg-card backdrop-blur-sm border border-border rounded-xl p-4 text-center"
               >
                 <Icon className="size-5 text-primary mx-auto mb-2" />
-                <p className="text-xl font-bold text-white">{stat.value}</p>
-                <p className="text-xs text-white/60">{stat.label}</p>
+                <p className="text-xl font-bold text-foreground">{stat.value}</p>
+                <p className="text-xs text-muted-foreground">{stat.label}</p>
               </div>
             );
           })}

@@ -1,4 +1,7 @@
 import type { ContactFormFieldsMap, CookiePreferences } from "../types/general";
+import cb1 from "@/public/ui/cb1.png";
+import cb2 from "@/public/ui/cb2.png";
+import cb3 from "@/public/ui/cb3.jpg";
 
 // ---------------------------------------------------------------------------
 // Analytics & tracking
@@ -262,3 +265,6 @@ export const CARD_COLORS_WHY_CHOOSE_US = [
   { bg: "bg-[#FCE4EC]", icon: "text-[#C62828]", hover: "bg-[#C62828]" },
   { bg: "bg-[#EDE7F6]", icon: "text-[#5E35B1]", hover: "bg-[#5E35B1]" },
 ];
+
+/** Home hero carousel — pre-merge Lowfield marketing imagery */
+export const CAROUSEL_BANNER = [cb1, cb2, cb3];

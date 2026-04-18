@@ -20,7 +20,7 @@ export default function KeyBenefits({
   return (
     <section className="bg-white dark:bg-background">
       {/* Background Pattern */}
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,var(--border)/5_1px,transparent_1px),linear-gradient(to_bottom,var(--border)/5_1px,transparent_1px)] bg-size[24px_24px]"></div>
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,var(--border)/5_1px,transparent_1px),linear-gradient(to_bottom,var(--border)/5_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
       <WidthConstraint className="space-y-5">
         {/* Header */}
@@ -66,7 +66,7 @@ export default function KeyBenefits({
             return (
               <div
                 key={item.title}
-                className="flex flex-col justify-between group bg-white dark:bg-[#003b5c] rounded-2xl p-6 shadow-md dark:shadow-md/30 hover:shadow-md dark:hover:shadow-md/50 transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-[#1a4d6e]"
+                className="flex flex-col justify-between group bg-card rounded-2xl p-6 shadow-md dark:shadow-md/30 hover:shadow-md dark:hover:shadow-md/50 transition-all duration-300 hover:-translate-y-2 border border-border"
               >
                 {/* Number Badge */}
                 <div className="flex items-center gap-4 mb-6">

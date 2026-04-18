@@ -9,8 +9,10 @@ import { cn } from "@/lib/utils/utils";
 import { getTenantSlug } from "@/lib/config/tenant";
 import { getMarketingBlocks } from "@/lib/services/firestore/queries";
 import type { MarketingBlocksDoc } from "@/lib/types/firestore";
+import { useTenantContext } from "@/components/providers/tenant-provider";
 
 export function WhyChooseUs() {
+  const { tenant } = useTenantContext();
   const [marketing, setMarketing] = useState<MarketingBlocksDoc | null>(null);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ export function WhyChooseUs() {
         <SectionHeader heading="Why choose us" />
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <h2 className="text-section-header font-bold">
-            Why Choose Belvedere
+            Why Choose {tenant?.displayName?.split(" ")[0] ?? "Lowfield"}
           </h2>
           <p className="text-base text-muted-foreground">
             We combine expertise, convenience, and personalized care to deliver
@@ -65,7 +67,7 @@ export function WhyChooseUs() {
 
                 <div className="relative z-10 p-8">
                   <div className="mb-6">
-                    <div className="size-16 bg-white dark:bg-[#055482] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div className="size-16 bg-white dark:bg-primary rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Icon
                         className={cn(
                           "size-8 transition-all duration-300 ease-linear",

@@ -21,7 +21,7 @@ export const TrustBadgeCard = ({
 }) => {
   const Icon = icon;
   return (
-    <Card className="w-60 shrink-0 bg-white dark:bg-[#003b5c] hover:shadow-md transition-all duration-300 border-border/60 hover:border-primary/30 mx-3 group hover:-translate-y-2 shadow-md dark:shadow-md/30">
+    <Card className="w-60 shrink-0 bg-card hover:shadow-md transition-all duration-300 border-border/60 hover:border-primary/30 mx-3 group hover:-translate-y-2 shadow-md dark:shadow-md/30">
       <CardContent className="p-6 flex flex-col items-center text-center">
         <div
           className={cn(

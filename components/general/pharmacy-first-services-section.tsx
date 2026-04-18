@@ -67,7 +67,7 @@ export function NHSPharmacyFirstSection({
               return (
                 <div
                   key={index}
-                  className="flex flex-col justify-between group bg-white dark:bg-[#003b5c] rounded-2xl p-6 shadow-sm dark:shadow-lg/30 hover:shadow-lg dark:hover:shadow-lg/50 transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-[#1a4d6e]"
+                  className="flex flex-col justify-between group bg-card rounded-2xl p-6 shadow-sm dark:shadow-lg/30 hover:shadow-lg dark:hover:shadow-lg/50 transition-all duration-300 hover:-translate-y-2 border border-border"
                 >
                   {/* Icon */}
                   <div
@@ -102,7 +102,7 @@ export function NHSPharmacyFirstSection({
           {/* NHS Badge */}
           <div className="mt-10">
             <div className="flex items-center justify-center gap-4">
-              <div className="h-px flex-1 bg-gray-300 dark:bg-[#1a4d6e] max-w-20 md:max-w-32" />
+              <div className="h-px flex-1 bg-gray-300 dark:bg-border max-w-20 md:max-w-32" />
               <div className="flex flex-col sm:flex-row items-center gap-3 text-center">
                 <div className="flex items-center gap-2">
                   <Stethoscope className="size-5 text-[#005EB8]" />
@@ -114,7 +114,7 @@ export function NHSPharmacyFirstSection({
                   Free treatment for eligible conditions
                 </span>
               </div>
-              <div className="h-px flex-1 bg-gray-300 dark:bg-[#1a4d6e] max-w-20 md:max-w-32" />
+              <div className="h-px flex-1 bg-gray-300 dark:bg-border max-w-20 md:max-w-32" />
             </div>
 
             {/* NHS Note */}

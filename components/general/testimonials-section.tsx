@@ -11,6 +11,7 @@ import { INTERNAL_LINKS, TRACKING_EVENTS } from "@/lib/constants/general";
 import { useTenantContext } from "@/components/providers/tenant-provider";
 import { TestimonialsTenantLineSkeleton } from "@/components/shared/tenant-skeletons";
 import Skeleton from "react-loading-skeleton";
+import patterns from "@/public/elements/pattern.svg";
 
 export default function Testimonials() {
   const { currentIndex, goToTestimonial } = useTestimonial();
@@ -19,7 +20,7 @@ export default function Testimonials() {
 
   if (loading || items.length === 0) {
     return (
-      <section className="py-20 bg-[#002f4b] relative overflow-hidden min-h-[320px]">
+      <section className="py-20 bg-gray-900 dark:bg-card/40 relative overflow-hidden min-h-[320px]">
         <WidthConstraint className="relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -39,9 +40,14 @@ export default function Testimonials() {
   const imageSrc = `/${currentTestimonial.assetKey.replace(/^\//, "")}`;
 
   return (
-    <section className="py-20 bg-[#002f4b] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />
+    <section className="py-20 bg-gray-900 dark:bg-card/40 relative overflow-hidden">
+      <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,168,37,0.08),transparent_50%)]" />
+      <div className="dark:hidden absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,191,255,0.06),transparent_50%)]" />
+      <Image
+        src={patterns}
+        alt=""
+        className="absolute inset-0 object-cover w-full opacity-50 pointer-events-none"
+      />
 
       <WidthConstraint className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -56,8 +62,8 @@ export default function Testimonials() {
               <p className="text-white/70 text-lg leading-relaxed max-w-md">
                 {isTenantReady && tenant ? (
                   <>
-                    Hear what our patients have to say about their experience with{" "}
-                    {tenant.displayName}.
+                    Hear what our patients have to say about their experience
+                    with {tenant.displayName}.
                   </>
                 ) : (
                   <TestimonialsTenantLineSkeleton />
@@ -95,7 +101,7 @@ export default function Testimonials() {
           </div>
 
           <div className="relative">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 space-y-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 space-y-6 min-h-96 animate-in">
               <Quote className="size-10 text-primary" />
 
               <p className="text-white/90 text-lg leading-relaxed">

@@ -25,7 +25,7 @@ export function ChatMessages({ messages, isTyping }: {  messages: Message[];
           <div className="size-8 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center shrink-0">
             <Bot className="size-4 text-primary" />
           </div>
-          <div className="bg-gray-100 dark:bg-[#002f4b] rounded-2xl rounded-bl-md px-4 py-3">
+          <div className="bg-gray-100 dark:bg-muted rounded-2xl rounded-bl-md px-4 py-3">
             <div className="flex gap-1">
               <span className="size-2 bg-gray-400 dark:bg-gray-500 rounded-full animate-bounce [animation-delay:-0.3s]" />
               <span className="size-2 bg-gray-400 dark:bg-gray-500 rounded-full animate-bounce [animation-delay:-0.15s]" />

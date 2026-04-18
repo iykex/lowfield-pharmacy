@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import bannerImage from "@/public/ui/pfp-banner.png";
+import curvedArrow from "@/public/elements/curved-arrow.svg";
 import { track } from "@/lib/analytics/tracker";
 import { TRACKING_EVENTS } from "@/lib/constants/general";
 import { useTenantContext } from "@/components/providers/tenant-provider";
@@ -38,10 +39,10 @@ export function HeroSection() {
 
             {/* Description */}
             <p className="text-gray-600 dark:text-white/60 text-lg leading-relaxed max-w-xl lg:text-justify">
-              At Belvedere Pharmacy, we prioritise the patient experience in our
-              local community. Recognising the challenges in accessing GP
-              services for common health concerns, we now offer Free NHS
-              Consultations for our local community.
+              At {tenant?.displayName ?? "Lowfield Pharmacy"}, we prioritise the
+              patient experience in our local community. Recognising the
+              challenges in accessing GP services for common health concerns, we
+              now offer Free NHS Consultations for our local community.
             </p>
 
             {!isTenantReady || !tenant ? (
@@ -67,9 +68,16 @@ export function HeroSection() {
                 </Link>
               </Button>
             )}
+            <Image src={curvedArrow} alt="" width={100} height={100} />
           </div>
-          <div>
-            <Image src={bannerImage} alt="banner" placeholder="blur" />
+          <div className="w-full max-w-xl justify-self-center lg:justify-self-end">
+            <Image
+              src={bannerImage}
+              alt="Pharmacy First consultation services"
+              placeholder="blur"
+              className="h-auto w-full"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+            />
           </div>
         </WidthConstraint>
       </div>

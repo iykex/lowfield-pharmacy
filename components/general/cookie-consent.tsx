@@ -45,7 +45,7 @@ export default function CookieConsentDialogue({
         }}
         className={cn(
           "fixed bottom-6 left-6 z-40 p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110",
-          "bg-white dark:bg-[#002f4b] border border-gray-200 dark:border-[#1a4d6e]",
+          "bg-white dark:bg-card border border-gray-200 dark:border-border",
           "hover:shadow-xl group",
           bubbleStateClassName
         )}
@@ -68,7 +68,7 @@ export default function CookieConsentDialogue({
     >
       <div
         className={cn(
-          "bg-white dark:bg-[#001d33] rounded-t-3xl sm:rounded-3xl shadow-2xl border border-gray-100 dark:border-[#1a4d6e]",
+          "bg-white dark:bg-card rounded-t-3xl sm:rounded-3xl shadow-2xl border border-gray-100 dark:border-border",
           "w-full sm:w-[420px] max-h-[90vh] overflow-hidden",
           "transition-all duration-300"
         )}
@@ -96,7 +96,7 @@ export default function CookieConsentDialogue({
                 }
               }}
               className={cn(
-                "p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-[#003b5c] transition-colors",
+                "p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-muted transition-colors",
                 !hasConsented && "opacity-50 cursor-not-allowed"
               )}
               disabled={!hasConsented}
@@ -149,7 +149,7 @@ export default function CookieConsentDialogue({
                       );
                     }}
                     variant="outline"
-                    className="flex-1 py-5 rounded-2xl border-2 border-gray-200 dark:border-[#1a4d6e] font-semibold hover:bg-gray-50 dark:hover:bg-[#002f4b] transition-all"
+                    className="flex-1 py-5 rounded-2xl border-2 border-gray-200 dark:border-border font-semibold hover:bg-gray-50 dark:hover:bg-muted transition-all"
                   >
                     Essential Only
                   </Button>
@@ -162,7 +162,7 @@ export default function CookieConsentDialogue({
                       );
                     }}
                     variant="outline"
-                    className="flex-1 py-5 rounded-2xl border-2 border-gray-200 dark:border-[#1a4d6e] font-semibold hover:bg-gray-50 dark:hover:bg-[#002f4b] transition-all"
+                    className="flex-1 py-5 rounded-2xl border-2 border-gray-200 dark:border-border font-semibold hover:bg-gray-50 dark:hover:bg-muted transition-all"
                   >
                     <Settings className="size-4 mr-2" />
                     Customize
@@ -175,7 +175,7 @@ export default function CookieConsentDialogue({
               {COOKIE_PREFERENCES_ITEMS.map((item) => (
                 <label
                   key={item.id}
-                  className="flex items-center justify-between p-4 bg-gray-50 dark:bg-[#002f4b] rounded-2xl border border-gray-100 dark:border-[#1a4d6e] cursor-pointer hover:border-primary/30 dark:hover:border-primary/30 transition-colors"
+                  className="flex items-center justify-between p-4 bg-gray-50 dark:bg-card rounded-2xl border border-gray-100 dark:border-border cursor-pointer hover:border-primary/30 dark:hover:border-primary/30 transition-colors"
                 >
                   <div className="flex-1">
                     <p className="font-semibold text-sm text-gray-900 dark:text-white">

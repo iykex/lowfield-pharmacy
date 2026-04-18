@@ -129,7 +129,7 @@ export function BackgroundImage({
             />
             {overlay && (
                 <div className={cn(
-                    "absolute inset-0 bg-gradient-to-r from-[#002f4b]/95 via-[#002f4b]/80 to-[#002f4b]/40",
+                    "absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/80 to-foreground/40",
                     overlayClassName
                 )} />
             )}
