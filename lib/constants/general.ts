@@ -57,10 +57,10 @@ export const TRACKING_EVENTS = {
 // Chatbot (localStorage)
 // ---------------------------------------------------------------------------
 
-export const VISITOR_NAME_KEY = "belvedere_visitor_name";
-export const VISITOR_NAME_EXPIRY_KEY = "belvedere_visitor_name_expiry";
-export const CHAT_HISTORY_KEY = "belvedere_chat_history";
-export const CHAT_LAST_ACTIVITY_KEY = "belvedere_chat_last_activity";
+export const VISITOR_NAME_KEY = "lowfield_visitor_name";
+export const VISITOR_NAME_EXPIRY_KEY = "lowfield_visitor_name_expiry";
+export const CHAT_HISTORY_KEY = "lowfield_chat_history";
+export const CHAT_LAST_ACTIVITY_KEY = "lowfield_chat_last_activity";
 export const CACHE_DURATION_MS = 4 * 60 * 60 * 1000; // 4 hours
 export const IDLE_THRESHOLD_MS = 15 * 60 * 1000; // 15 minutes
 
@@ -68,9 +68,9 @@ export const IDLE_THRESHOLD_MS = 15 * 60 * 1000; // 15 minutes
 // Cookies
 // ---------------------------------------------------------------------------
 
-export const COOKIE_CONSENT_KEY = "belvedere_cookie_consent";
+export const COOKIE_CONSENT_KEY = "lowfield_cookie_consent";
 
-export const COOKIE_PREFERENCES_KEY = "belvedere_cookie_preferences";
+export const COOKIE_PREFERENCES_KEY = "lowfield_cookie_preferences";
 
 export const DEFAULT_PREFERENCES: CookiePreferences = {
   essential: true,
