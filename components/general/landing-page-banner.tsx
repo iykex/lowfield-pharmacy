@@ -40,7 +40,7 @@ export default function Banner() {
       : null;
 
   return (
-    <section className="h-screen overflow-hidden relative">
+    <section className="h-screen overflow-hidden relative pt-10">
       <BackgroundCarousel />
       {/* Dark overlay — pre-merge Lowfield */}
       <div className="absolute inset-0 bg-linear-to-r from-[#0d1f2d]/90 via-[#0d1f2d]/75 to-[#0d1f2d]/20 dark:from-[#0d1f2d]/95 dark:via-[#0d1f2d]/85 dark:to-[#0d1f2d]/40" />
@@ -118,7 +118,7 @@ export default function Banner() {
 
                   <div className="space-y-5">
                     <div className="space-y-2">
-                      <p className="text-primary font-medium text-xs uppercase tracking-wider">
+                      <p className="text-white font-medium text-xs uppercase tracking-wider">
                         Mobile App
                       </p>
                       <h3 className="text-xl font-bold text-white">

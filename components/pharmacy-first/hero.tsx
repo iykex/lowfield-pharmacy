@@ -15,7 +15,7 @@ import { PrimaryCtaSkeleton } from "@/components/shared/tenant-skeletons";
 export function HeroSection() {
   const { tenant, isTenantReady } = useTenantContext();
   return (
-    <section className="overflow-hidden relative pb-8">
+    <section className="overflow-hidden relative pb-8 pt-5">
       <div className="w-full h-full pt-40 px-2 sm:px-0 sm:pt-[10%]">
         <WidthConstraint className="grid lg:grid-cols-2 gap-16 place-items-center">
           {/* Left Content */}
@@ -58,7 +58,7 @@ export function HeroSection() {
                   onClick={() => {
                     track(
                       TRACKING_EVENTS.bookAppointmentButton,
-                      tenant.bookAppointmentUrl
+                      tenant.bookAppointmentUrl,
                     );
                   }}
                   className="flex items-center justify-center gap-3"

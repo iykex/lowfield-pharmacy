@@ -14,7 +14,7 @@ import { PrimaryCtaSkeleton } from "@/components/shared/tenant-skeletons";
 export function ServicesHeading() {
   const { tenant, isTenantReady } = useTenantContext();
   return (
-    <section className="pt-32 pb-20 bg-background">
+    <section className="pt-35 pb-20 bg-background">
       <WidthConstraint className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 place-items-center">
           {/* LEFT COL - Content */}

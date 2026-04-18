@@ -1,5 +1,12 @@
 "use client";
-import { CheckCircle, ArrowRight, Mail, Phone, MapPin, Clock } from "lucide-react";
+import {
+  CheckCircle,
+  ArrowRight,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+} from "lucide-react";
 import WidthConstraint from "./width-constraint";
 import { INTERNAL_LINKS, TRACKING_EVENTS } from "@/lib/constants/general";
 import { Button } from "../ui/button";
@@ -150,7 +157,7 @@ export default function CTASection() {
                   onClick={() =>
                     track(
                       TRACKING_EVENTS.bookAppointmentButton,
-                      tenant.bookAppointmentUrl
+                      tenant.bookAppointmentUrl,
                     )
                   }
                   className="flex items-center gap-2"
@@ -163,7 +170,7 @@ export default function CTASection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-0 text-foreground hover:bg-foreground hover:text-white hover:scale-105 hover:shadow-xs hover:shadow-background font-semibold px-8 rounded-xl transition-all ease-in-out duration-500 w-fit z-10"
+                className="border-0 text-foreground bg-secondary font-semibold px-8 rounded-xl transition-all ease-in-out duration-500 w-fit z-10 hover:tracking-wide hover:bg-secondary/80"
               >
                 <Link href="/contact-us">Contact Us</Link>
               </Button>

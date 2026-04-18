@@ -476,6 +476,28 @@
   }
 }
 
+/* Duplicated content row: -50% == one copy width; L→R drift like a slow terminal ticker */
+@keyframes infoBarScroll {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-infoBarScroll {
+  animation: infoBarScroll 50s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-infoBarScroll {
+    animation: none;
+    transform: none;
+  }
+}
+
 .dashed-grid-bg {
   position: relative;
   background-color: var(--background);
