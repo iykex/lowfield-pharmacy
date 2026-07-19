@@ -22,8 +22,10 @@ export default async function Banner() {
 
   const heroStats = marketing?.aboutHeroStats ?? [];
   const heroBadges = marketing?.aboutHeroBadges ?? [];
-  const pharmacyFirstWord =
-    tenant?.displayName?.split(" ")[0] ?? "Lowfield";
+  const displayName = tenant?.displayName ?? "Community Pharmacy";
+  const displayWords = displayName.split(" ");
+  const primaryName = displayWords[0] ?? "Community";
+  const secondaryName = displayWords.slice(1).join(" ") || "Pharmacy";
   const day = new Date().getDay();
 
   return (
@@ -53,7 +55,7 @@ export default async function Banner() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
                 About{" "}
                 <span className="text-primary relative inline-block">
-                  {pharmacyFirstWord}
+                  {primaryName}
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
                     viewBox="0 0 200 8"
@@ -68,7 +70,7 @@ export default async function Banner() {
                   </svg>
                 </span>
                 <br />
-                <span className="text-foreground/90">Pharmacy</span>
+                <span className="text-foreground/90">{secondaryName}</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-xl">
@@ -127,14 +129,14 @@ export default async function Banner() {
                   <div className="flex items-center gap-4">
                     <Image
                       src="/logo/lowfield-logo.png"
-                      alt="Lowfield Pharmacy"
+                      alt={`${displayName} logo`}
                       width={56}
                       height={56}
                       className="rounded-xl shadow-sm"
                     />
                     <div>
                       <h3 className="text-lg font-bold text-foreground">
-                        {tenant?.displayName ?? "Lowfield Pharmacy"}
+                        {displayName}
                       </h3>
                       <div className="flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

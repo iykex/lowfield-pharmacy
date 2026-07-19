@@ -15,6 +15,7 @@ import {
   AppStoreCompactListSkeleton,
   BannerHeroActionsSkeleton,
 } from "@/components/shared/tenant-skeletons";
+import { externalLinkProps } from "@/lib/utils/external-link";
 
 export default function Banner() {
   const { tenant, isTenantReady } = useTenantContext();
@@ -52,7 +53,7 @@ export default function Banner() {
             <div className="lg:col-span-3 space-y-8 relative">
               <Badge
                 variant="secondary"
-                className="py-1.5 px-4 text-sm font-bold bg-blue-500 text-white border border-[#00BFFF]/20 backdrop-blur-sm"
+                className="border border-white/40 bg-[#002f4b]/75 px-5 py-2 text-base font-bold text-white shadow-sm backdrop-blur-sm sm:text-lg"
               >
                 <BadgeCheckIcon className="size-4 mr-2" />
                 NHS Services Available
@@ -77,8 +78,8 @@ export default function Banner() {
                       asChild
                       className={
                         btn.variant === "primary"
-                          ? "group bg-[#F9A825] text-black hover:bg-[#F9A825]/90 transition-all duration-300 shadow-lg hover:shadow-[#F9A825]/25 px-8 py-6 text-base font-semibold"
-                          : "group border-white/20 bg-white/5 text-white hover:bg-white hover:text-primary backdrop-blur-sm px-8 py-6 text-base font-semibold transition-all duration-300"
+                          ? "group bg-[#F9A825] text-black hover:bg-[#FFD166] transition-all duration-300 shadow-lg hover:shadow-[#F9A825]/25 px-8 py-6 text-base font-extrabold tracking-wide focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#001a33]"
+                          : "group border-white/20 bg-white/5 text-white hover:bg-white hover:text-[#002f4b] backdrop-blur-sm px-8 py-6 text-base font-semibold transition-all duration-300"
                       }
                     >
                       <Link
@@ -86,6 +87,7 @@ export default function Banner() {
                           track(btn.tracking, btn.href);
                         }}
                         href={btn.href}
+                        {...externalLinkProps(btn.href)}
                         className="flex items-center gap-2"
                       >
                         {btn.text.toUpperCase()}
@@ -136,6 +138,7 @@ export default function Banner() {
                           <Link
                             key={store.name}
                             href={store.href}
+                            {...externalLinkProps(store.href)}
                             onClick={() => {
                               track(store.tracking, store.href);
                             }}
