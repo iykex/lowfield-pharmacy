@@ -59,6 +59,7 @@
 }
 
 :root {
+  color-scheme: light;
   --radius: 0.75rem;
   /* Sky Blue Professional - Light Theme */
   --background: #ffffff;
@@ -111,6 +112,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   /* Midnight Ocean - Dark Theme */
   --background: #0d1f2d;
   --foreground: #e8f4fa;
@@ -304,20 +306,6 @@
   }
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 18s linear infinite;
-}
-
 .group-hover\:paused:hover {
   animation-play-state: paused;
 }
@@ -345,29 +333,6 @@
 ::view-transition-image-pair(root) {
   isolation: isolate;
 }
-
-/* Duplicated content row: -50% == one copy width; L→R drift like a slow terminal ticker */
-@keyframes infoBarScroll {
-  from {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Not named `animate-*` — Tailwind v4 reserves that prefix for @theme animations */
-.info-bar-marquee {
-  animation: infoBarScroll 50s linear infinite;
-  will-change: transform;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .info-bar-marquee {
-    animation: none;
-    transform: none;
-  }
 }
 
 .dashed-grid-bg {
