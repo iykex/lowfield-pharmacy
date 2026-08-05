@@ -1,9 +1,15 @@
 export const PHARMACY_INFO = {
   name: "Lowfield Pharmacy",
   slug: "lowfield",
-  postcode: "DA1 1HP",
-  city: "Dartford",
-  region: "London/Dartford",
+  phone: "01322 220779",
+  phoneHref: "tel:01322220779",
+  address: {
+    line1: "63 Lowfield Street",
+    city: "Dartford",
+    region: "Kent",
+    postcode: "DA1 1HP",
+    country: "United Kingdom",
+  },
   pharmadoctorUrl:
     "https://pharmadoctor.co.uk/patient/locations/london/dartford/Lowfield-Pharmacy-DA11HP-6430",
   shortPharmadoctorUrl: "https://www.phdr.co.uk/6430",
