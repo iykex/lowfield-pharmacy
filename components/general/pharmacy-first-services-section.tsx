@@ -6,6 +6,7 @@ import { INTERNAL_LINKS } from "@/lib/constants/general";
 import WidthConstraint from "../shared/width-constraint";
 import { track } from "@/lib/analytics/tracker";
 import { iconForConditionId, type NhsPfpHomeCard } from "@/lib/utils/service-ui";
+import { HomePfpSkeleton } from "@/components/shared/tenant-skeletons";
 
 export function NHSPharmacyFirstSection({
   cards,
@@ -61,48 +62,52 @@ export function NHSPharmacyFirstSection({
           </div>
 
           {/* Services Grid */}
-          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-4">
-            {cards.map((service, index) => {
-              const Icon = iconForConditionId(service.conditionId);
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col justify-between group bg-card rounded-2xl p-6 shadow-sm dark:shadow-lg/30 hover:shadow-lg dark:hover:shadow-lg/50 transition-all duration-300 hover:-translate-y-2 border border-border"
-                >
-                  {/* Icon */}
+          {cards.length === 0 ? (
+            <HomePfpSkeleton />
+          ) : (
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-4">
+              {cards.map((service, index) => {
+                const Icon = iconForConditionId(service.conditionId);
+                return (
                   <div
-                    className={`${service.bgColor} size-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm`}
+                    key={index}
+                    className="flex flex-col justify-between group bg-white dark:bg-[#003b5c] rounded-2xl p-6 shadow-sm dark:shadow-lg/30 hover:shadow-lg dark:hover:shadow-lg/50 transition-all duration-300 hover:-translate-y-2 border border-gray-200 dark:border-[#1a4d6e]"
                   >
-                    <Icon className={`size-6 ${service.color}`} />
+                    {/* Icon */}
+                    <div
+                      className={`${service.bgColor} size-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm`}
+                    >
+                      <Icon className={`size-6 ${service.color}`} />
+                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-5 leading-relaxed line-clamp-2">
+                      {service.description}
+                    </p>
+
+                    {/* Book Button */}
+                    <Link
+                      href={service.href}
+                      onClick={() => track(service.tracking, service.href)}
+                      className="group/btn inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors mt-auto"
+                    >
+                      <Calendar className="size-4" />
+                      Book Now
+                      <ArrowRight className="size-3 transition-transform group-hover/btn:translate-x-1" />
+                    </Link>
                   </div>
-
-                  {/* Content */}
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-5 leading-relaxed line-clamp-2">
-                    {service.description}
-                  </p>
-
-                  {/* Book Button */}
-                  <Link
-                    href={service.href}
-                    onClick={() => track(service.tracking, service.href)}
-                    className="group/btn inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors mt-auto"
-                  >
-                    <Calendar className="size-4" />
-                    Book Now
-                    <ArrowRight className="size-3 transition-transform group-hover/btn:translate-x-1" />
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
 
           {/* NHS Badge */}
           <div className="mt-10">
             <div className="flex items-center justify-center gap-4">
-              <div className="h-px flex-1 bg-gray-300 dark:bg-border max-w-20 md:max-w-32" />
+              <div className="h-px flex-1 bg-gray-300 dark:bg-[#1a4d6e] max-w-20 md:max-w-32" />
               <div className="flex flex-col sm:flex-row items-center gap-3 text-center">
                 <div className="flex items-center gap-2">
                   <Stethoscope className="size-5 text-[#005EB8]" />
@@ -114,7 +119,7 @@ export function NHSPharmacyFirstSection({
                   Free treatment for eligible conditions
                 </span>
               </div>
-              <div className="h-px flex-1 bg-gray-300 dark:bg-border max-w-20 md:max-w-32" />
+              <div className="h-px flex-1 bg-gray-300 dark:bg-[#1a4d6e] max-w-20 md:max-w-32" />
             </div>
 
             {/* NHS Note */}

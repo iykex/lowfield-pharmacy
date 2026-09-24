@@ -1,12 +1,10 @@
-"use client";
 import WidthConstraint from "@/components/shared/width-constraint";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, BadgeCheckIcon, Download } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { BackgroundCarousel } from "./hero-carousel";
-import curvedArrow from "@/public/elements/curved-arrow.svg";
+import bannerImage from "@/public/ui/home-banner.png";
 import { track } from "@/lib/analytics/tracker";
 import { buildAppStoreLinks } from "@/lib/utils/app-store-links";
 import { TRACKING_EVENTS } from "@/lib/constants/general";
@@ -25,7 +23,7 @@ export default function Banner() {
       ? [
           {
             text: "Book an Appointment",
-            href: tenant.bookAppointmentUrl,
+            href: "/book",
             variant: "primary" as const,
             icon: true,
             tracking: TRACKING_EVENTS.bookAppointmentButton,
@@ -41,30 +39,40 @@ export default function Banner() {
       : null;
 
   return (
-    <section className="h-screen overflow-hidden relative pt-10">
-      <BackgroundCarousel />
-      {/* Dark overlay — pre-merge Lowfield */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#0d1f2d]/90 via-[#0d1f2d]/75 to-[#0d1f2d]/20 dark:from-[#0d1f2d]/95 dark:via-[#0d1f2d]/85 dark:to-[#0d1f2d]/40" />
+    <section className="h-screen overflow-hidden relative pt-20">
+      {/* Background Image with CDN optimization */}
+      <Image
+        src={bannerImage}
+        alt={`${tenant?.displayName ?? "Community pharmacy"} team providing local healthcare`}
+        fill
+        className="object-cover object-center"
+        priority
+        quality={85}
+        placeholder="blur"
+      />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-linear-to-r from-[#001a33]/95 via-[#001a33]/85 to-[#001a33]/50 dark:from-[#001122]/95 dark:via-[#001122]/85 dark:to-[#001122]/40" />
       {/* Content */}
       <div className="relative w-full h-full flex items-center">
         <WidthConstraint>
           <div className="grid lg:grid-cols-5 gap-8 items-center">
             {/* Left Content - Takes 3 columns */}
-            <div className="lg:col-span-3 space-y-8 relative">
+            <div className="lg:col-span-3 space-y-8">
               <Badge
                 variant="secondary"
-                className="border border-white/40 bg-[#002f4b]/75 px-5 py-2 text-base font-bold text-white shadow-sm backdrop-blur-sm sm:text-lg"
+                className="border border-white/40 bg-[#002f4b]/90 px-5 py-2 text-base font-bold text-white shadow-sm backdrop-blur-sm sm:text-lg"
               >
-                <BadgeCheckIcon className="size-4 mr-2" />
-                NHS Services Available
+                <BadgeCheckIcon className="size-4 mr-2 text-amber-300" />
+                NHS & Private Healthcare Services
               </Badge>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
                 Your Trusted Partner in <br />
                 <span className="text-[#F9A825]">Community Healthcare</span>
               </h1>
 
-              <p className="text-base sm:text-lg text-gray-200 max-w-xl leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-100 max-w-xl leading-relaxed font-normal">
                 Experience accessible, professional healthcare with expert
                 advice, prescription services, and personalized care tailored to
                 your needs.
@@ -78,8 +86,8 @@ export default function Banner() {
                       asChild
                       className={
                         btn.variant === "primary"
-                          ? "group bg-[#F9A825] text-black hover:bg-[#FFD166] transition-all duration-300 shadow-lg hover:shadow-[#F9A825]/25 px-8 py-6 text-base font-extrabold tracking-wide focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#001a33]"
-                          : "group border-white/20 bg-white/5 text-white hover:bg-white hover:text-[#002f4b] backdrop-blur-sm px-8 py-6 text-base font-semibold transition-all duration-300"
+                          ? "group bg-[#F9A825] text-slate-950 font-black hover:bg-[#ffc107] border-2 border-amber-300 shadow-xl hover:shadow-amber-400/30 px-8 py-6 text-base tracking-wide rounded-xl focus-visible:ring-4 focus-visible:ring-amber-300 transition-all duration-300"
+                          : "group border-2 border-white/70 bg-black/50 text-white hover:bg-white hover:text-black backdrop-blur-md px-8 py-6 text-base font-bold rounded-xl shadow-lg transition-all duration-300"
                       }
                     >
                       <Link
@@ -101,11 +109,10 @@ export default function Banner() {
                   <BannerHeroActionsSkeleton />
                 )}
               </div>
-              <Image src={curvedArrow} alt="" width={100} height={100} />
             </div>
 
             {/* Right Side - Download App Section (Desktop Only) - Takes 2 columns */}
-            <div className="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+            <div className="hidden lg:flex lg:col-span-2 justify-center items-center">
               <div className="relative">
                 {/* Pulsing ring animation */}
                 <div className="absolute -inset-3 animate-ping-slow rounded-3xl bg-primary/20" />
@@ -120,7 +127,7 @@ export default function Banner() {
 
                   <div className="space-y-5">
                     <div className="space-y-2">
-                      <p className="text-white font-medium text-xs uppercase tracking-wider">
+                      <p className="text-primary font-semibold text-xs uppercase tracking-wider">
                         Mobile App
                       </p>
                       <h3 className="text-xl font-bold text-white">
